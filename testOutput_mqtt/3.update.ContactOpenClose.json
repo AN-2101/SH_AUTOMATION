@@ -1,0 +1,16 @@
+{
+    "typeMessage": "updateData",
+    "dataMessage": {
+        "connectivityType": "zigbee",
+        "properties": {
+            "command": "updateTrait",
+            "data": {
+                "deviceEUI": "0x5C0272FFFE8F777C",
+                "child": 1,
+                "trait": "traitOpenClose",
+                "value": 0,
+                "timeStamp": 1606896166195
+            }
+        }
+    }
+}

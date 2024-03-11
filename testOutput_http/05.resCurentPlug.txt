@@ -1,0 +1,32 @@
+{
+  "op" : 5,
+  "pc" : {
+    "m2m:sgn" : {
+      "sur" : "sub-0c884de5-8661-4087-aa66-8321bb0e7462",
+      "sud" : false,
+      "nev" : {
+        "rep" : {
+          "m2m:cin" : {
+            "cs" : 1221,
+            "ct" : "20201203T104833",
+            "st" : 819,
+            "con" : "{\"commandId\":\"deviceCurrentData\",\"name\":\"deviceCurrentData\",\"commandType\":\"requestData\",\"status\":\"5\",\"updateTime\":1606967319991,\"responseData\":\"{\\\"requestID\\\":\\\"1587356365924\\\",\\\"status\\\":\\\"success\\\",\\\"typeMessage\\\":\\\"requestData\\\",\\\"dataMessage\\\":{\\\"properties\\\":{\\\"command\\\":\\\"deviceCurrentData\\\",\\\"data\\\":[{\\\"deviceType\\\":\\\"typeSmartPlug\\\",\\\"deviceName\\\":\\\"\\\",\\\"deviceLocate\\\":\\\"\\\",\\\"gatewayID\\\":\\\"BC33ACFFFE3DA95C\\\",\\\"connectivityType\\\":\\\"zigbee\\\",\\\"deviceID\\\":\\\"0xC5C5\\\",\\\"deviceEUI\\\":\\\"0x588E81FFFE5A42DA\\\",\\\"deviceInfo\\\":{\\\"manufacturer\\\":\\\"VNPT\\\",\\\"model\\\":\\\"model1\\\",\\\"hwVersion\\\":\\\"1.0\\\",\\\"swVersion\\\":\\\"1.0\\\"},\\\"deviceTrait\\\":{\\\"deviceChild\\\":[{\\\"child\\\":1,\\\"childName\\\":\\\"null\\\",\\\"childInfo\\\":[{\\\"traitName\\\":\\\"traitOnOff\\\",\\\"bindDirection\\\":\\\"Out\\\",\\\"value\\\":1},{\\\"traitName\\\":\\\"traitEnergy\\\",\\\"bindDirection\\\":\\\"In\\\",\\\"value\\\":\\\"2.126\\\"},{\\\"traitName\\\":\\\"traitVoltage\\\",\\\"bindDirection\\\":\\\"In\\\",\\\"value\\\":231},{\\\"traitName\\\":\\\"traitCurrent\\\",\\\"bindDirection\\\":\\\"In\\\",\\\"value\\\":0},{\\\"traitName\\\":\\\"traitPower\\\",\\\"bindDirection\\\":\\\"In\\\",\\\"value\\\":0}]}],\\\"numChild\\\":\\\"1\\\"},\\\"customData\\\":{\\\"data1\\\":\\\"null\\\",\\\"data2\\\":\\\"null\\\",\\\"data3\\\":\\\"null\\\"},\\\"_id\\\":\\\"cgQUYRZXdnittTNG\\\"}]}}}\",\"recordId\":\"1587356365924\"}",
+            "ty" : 4,
+            "ri" : "cin-3b75a750-ff44-4d3c-ae90-cd02da44391e",
+            "lt" : "20201203T104833",
+            "pi" : "cnt-cd0fbd3a-159d-4f1f-a0e4-313a34253247",
+            "cnf" : "text/plains:0",
+            "rn" : "cin_3b75a750-ff44-4d3c-ae90-cd02da44391e",
+            "et" : "19700101T164536",
+            "cr" : "SAE1dd32fb1-cf81-430b-9749-78dd157ded1f"
+          }
+        },
+        "net" : 3
+      },
+      "cr" : "SAE8793f237-4fdf-49ef-8e70-f4853b2cfd73"
+    }
+  },
+  "to" : "/SAE8793f237-4fdf-49ef-8e70-f4853b2cfd73",
+  "rqi" : "9cbcbe2e-f690-49b9-8a13-0f15b324c5f3",
+  "fr" : "/in-cse"
+}

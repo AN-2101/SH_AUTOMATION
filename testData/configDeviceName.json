@@ -1,0 +1,13 @@
+{
+  "typeMessage": "config",
+  "dataMessage": {
+    "properties": {
+      "command": "configDeviceData",
+      "data": {
+        "deviceEUI": "0x588E81FFFE5A4300",
+        "configType": "deviceName",
+        "value": "Switch A3EC5"
+      }
+    }
+  }
+}

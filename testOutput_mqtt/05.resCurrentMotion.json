@@ -1,0 +1,11 @@
+{
+    "requestID": "1587356365924",
+    "status": "success",
+    "typeMessage": "requestData",
+    "dataMessage": {
+        "properties": {
+            "command": "deviceCurrentData",
+            "data": []
+        }
+    }
+}

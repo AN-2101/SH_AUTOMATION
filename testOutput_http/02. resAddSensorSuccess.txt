@@ -1,0 +1,32 @@
+{
+  "op" : 5,
+  "pc" : {
+    "m2m:sgn" : {
+      "sur" : "sub-0c884de5-8661-4087-aa66-8321bb0e7462",
+      "sud" : false,
+      "nev" : {
+        "rep" : {
+          "m2m:cin" : {
+            "cs" : 999,
+            "ct" : "20201203T093734",
+            "st" : 771,
+            "con" : "{\"commandId\":\"addDevice\",\"name\":\"addDevice\",\"commandType\":\"commission\",\"status\":\"5\",\"updateTime\":1606963061589,\"responseData\":\"{\\\"requestID\\\":\\\"1587356365924\\\",\\\"status\\\":\\\"success\\\",\\\"typeMessage\\\":\\\"commission\\\",\\\"dataMessage\\\":{\\\"properties\\\":{\\\"command\\\":\\\"addDevice\\\",\\\"data\\\":[{\\\"deviceType\\\":\\\"typeTempSensor\\\",\\\"deviceName\\\":\\\"\\\",\\\"deviceLocate\\\":\\\"\\\",\\\"gatewayID\\\":\\\"BC33ACFFFE3DA95C\\\",\\\"connectivityType\\\":\\\"zigbee\\\",\\\"deviceID\\\":\\\"0xDB77\\\",\\\"deviceEUI\\\":\\\"0x60A423FFFE094154\\\",\\\"deviceInfo\\\":{\\\"manufacturer\\\":\\\"VNPT\\\",\\\"model\\\":\\\"model1\\\",\\\"hwVersion\\\":\\\"1.0\\\",\\\"swVersion\\\":\\\"1.0\\\"},\\\"deviceTrait\\\":{\\\"deviceChild\\\":[{\\\"child\\\":1,\\\"childName\\\":\\\"null\\\",\\\"childInfo\\\":[{\\\"traitName\\\":\\\"traitTemperature\\\",\\\"bindDirection\\\":\\\"In\\\",\\\"value\\\":\\\"null\\\"},{\\\"traitName\\\":\\\"traitHumidity\\\",\\\"bindDirection\\\":\\\"In\\\",\\\"value\\\":\\\"null\\\"}]}],\\\"numChild\\\":\\\"1\\\"},\\\"customData\\\":{\\\"data1\\\":\\\"null\\\",\\\"data2\\\":\\\"null\\\",\\\"data3\\\":\\\"null\\\"},\\\"_id\\\":\\\"zHenkXXkeQwGAogw\\\"}]}}}\",\"recordId\":\"1587356365924\"}",
+            "ty" : 4,
+            "ri" : "cin-38ba3773-8350-4bcb-be7b-224624e7576f",
+            "lt" : "20201203T093734",
+            "pi" : "cnt-cd0fbd3a-159d-4f1f-a0e4-313a34253247",
+            "cnf" : "text/plains:0",
+            "rn" : "cin_38ba3773-8350-4bcb-be7b-224624e7576f",
+            "et" : "19700101T164536",
+            "cr" : "SAE1dd32fb1-cf81-430b-9749-78dd157ded1f"
+          }
+        },
+        "net" : 3
+      },
+      "cr" : "SAE8793f237-4fdf-49ef-8e70-f4853b2cfd73"
+    }
+  },
+  "to" : "/SAE8793f237-4fdf-49ef-8e70-f4853b2cfd73",
+  "rqi" : "5c3c1b12-90e5-4615-983d-7b772c78e55a",
+  "fr" : "/in-cse"
+}

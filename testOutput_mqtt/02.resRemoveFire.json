@@ -1,0 +1,13 @@
+{
+    "requestID": "1587356365924",
+    "status": "success",
+    "typeMessage": "commission",
+    "dataMessage": {
+        "properties": {
+            "command": "removeDevice",
+            "data": {
+                "deviceEUI": "0x5C0272FFFEC4CC8C"
+            }
+        }
+    }
+}

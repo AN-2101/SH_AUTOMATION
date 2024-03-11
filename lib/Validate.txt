@@ -1,0 +1,81 @@
+*** Settings ***
+Resource          ../variable/mqttVariable.txt
+Library           String
+Library           ../libpy/process_string.py
+
+*** Keywords ***
+Validate Msg Add Dev Success
+    [Arguments]    ${json_data}
+    should be equal    ${json_data['typeMessage']}    commission
+    should be equal    ${json_data['dataMessage']['properties']['command']}    addDevice
+    should be equal    ${json_data['dataMessage']['properties']['data']}    success
+
+Validate Msg Add Dev Error
+    [Arguments]    ${json_data}
+    should be equal    ${json_data['typeMessage']}    commission
+    should be equal    ${json_data['dataMessage']['properties']['command']}    addDevice
+    should be equal    ${json_data['dataMessage']['properties']['data']}    error
+
+Validate PLUG Join Success
+    [Arguments]    ${json_data}
+    should be equal    ${json_data['typeMessage']}    commission
+    should be equal    ${json_data['dataMessage']['properties']['command']}    addDevice
+    ${data_item}    Set Variable    ${json_data['dataMessage']['properties']['data'][0]}
+    should be equal    ${data_item['deviceType']}    ${DEV_TYPE_Plug}
+    should be equal    ${data_item['deviceName']}    Plug
+    should be equal    ${data_item['connectivityType']}    zigbee
+    should be equal    ${data_item['deviceEUI']}    ${EUI_PLUG_1}
+
+Validate Remove Device Success
+    [Arguments]    ${json_data}    ${DEV_EUI}
+    should be equal    ${json_data['typeMessage']}    commission
+    should be equal    ${json_data['dataMessage']['properties']['command']}    removeDevice
+    should be equal    ${json_data['dataMessage']['properties']['data']['deviceEUI']}    ${dev_ID}
+
+Validate Remove Device Success with EUI and ID
+    [Arguments]    ${json_data}    ${dev_EUI}    ${dev_ID}
+    should be equal    ${json_data['typeMessage']}    commission
+    should be equal    ${json_data['dataMessage']['properties']['command']}    removeDevice
+    should be equal    ${json_data['dataMessage']['properties']['data']['deviceID']}    ${dev_ID}
+    should be equal    ${json_data['dataMessage']['properties']['data']['deviceEUI']}    ${dev_EUI}
+
+Validate Device Join Success
+    [Arguments]    ${json_data}
+    should be equal    ${json_data['typeMessage']}    commission
+    should be equal    ${json_data['dataMessage']['properties']['command']}    addDevice
+    ${length}    Get Length    ${json_data['dataMessage']['properties']['data']}
+    ${length_str}    Convert To String    ${length}
+    Should be equal    ${length_str}    1
+
+Validate Device Join Success With EUI
+    [Arguments]    ${json_data}    ${dev_EUI}
+    should be equal    ${json_data['typeMessage']}    commission
+    should be equal    ${json_data['dataMessage']['properties']['command']}    addDevice
+    ${length}    Get Length    ${json_data['dataMessage']['properties']['data']}
+    ${length_str}    Convert To String    ${length}
+    Should be equal    ${length_str}    1
+    ${data_item}    Set Variable    ${json_data['dataMessage']['properties']['data'][0]}
+    should be equal    ${data_item['deviceEUI']}    ${dev_EUI}
+
+Validate Devices Join Success
+    [Arguments]    ${json_data}    ${num_device}
+    should be equal    ${json_data['typeMessage']}    requestData
+    should be equal    ${json_data['dataMessage']['properties']['command']}    listDevice
+    Length should be    ${json_data['dataMessage']['properties']['data']}    ${num_device}
+    #${length}    Get Length    ${json_data['dataMessage']['properties']['data']}
+    #${length_str}    Convert To String    ${length}
+    #Should be equal    ${length_str}    ${num_device}
+
+Validate Get Device Empty
+    [Arguments]    ${json_data}
+    should be equal    ${json_data['typeMessage']}    requestData
+    should be equal    ${json_data['dataMessage']['properties']['command']}    listDevice
+    Length should be    ${json_data['dataMessage']['properties']['data']}    0
+    #${length}    Get Length    ${json_data['dataMessage']['properties']['data']}
+    #${length_str}    Convert To String    ${length}
+    #Should be equal    ${length_str}    0
+
+Validate Msg Add Scene Success
+    [Arguments]    ${json_data}
+    should be equal    ${json_data['commandType']}    ruleEngine
+    should be equal    ${json_data['responseData']['status']}     success

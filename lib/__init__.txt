@@ -1,0 +1,9 @@
+*** Settings ***
+Library           MQTTLibrary
+Library           HttpLibrary.HTTP
+Library           OperatingSystem
+Library           jsonschema
+Library           BuiltIn
+Library           String
+Library           Collections
+Resource          ../variable/mqttVariable.txt

@@ -1,0 +1,69 @@
+{
+    "requestID": "1587356365924",
+    "status": "success",
+    "typeMessage": "commission",
+    "dataMessage": {
+        "properties": {
+            "command": "addDevice",
+            "data": [
+                {
+                    "deviceType": "typeSmartPlug",
+                    "deviceName": "",
+                    "deviceLocate": "",
+                    "gatewayID": "BC33ACFFFE3DA95C",
+                    "connectivityType": "zigbee",
+                    "deviceID": "0xC5C5",
+                    "deviceEUI": "0x588E81FFFE5A42DA",
+                    "deviceInfo": {
+                        "manufacturer": "VNPT",
+                        "model": "model1",
+                        "hwVersion": "1.0",
+                        "swVersion": "1.0"
+                    },
+                    "deviceTrait": {
+                        "deviceChild": [
+                            {
+                                "child": 1,
+                                "childName": "null",
+                                "childInfo": [
+                                    {
+                                        "traitName": "traitOnOff",
+                                        "bindDirection": "Out",
+                                        "value": "null"
+                                    },
+                                    {
+                                        "traitName": "traitEnergy",
+                                        "bindDirection": "In",
+                                        "value": "null"
+                                    },
+                                    {
+                                        "traitName": "traitVoltage",
+                                        "bindDirection": "In",
+                                        "value": "null"
+                                    },
+                                    {
+                                        "traitName": "traitCurrent",
+                                        "bindDirection": "In",
+                                        "value": "null"
+                                    },
+                                    {
+                                        "traitName": "traitPower",
+                                        "bindDirection": "In",
+                                        "value": "null"
+                                    }
+                                ]
+                            }
+                        ],
+                        "numChild": "1"
+                    },
+                    "customData": {
+                        "data1": "null",
+                        "data2": "null",
+                        "data3": "null"
+                    },
+                    "_id": "cgQUYRZXdnittTNG"
+                }
+            ]
+        }
+    }
+}

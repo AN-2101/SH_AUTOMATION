@@ -1,0 +1,40 @@
+{
+	"typeMessage":"ruleEngine",
+	"dataMessage":
+		{
+			"properties":
+			{
+				"command" 		 : "addRule",
+				"data":
+				{
+					"typeRule"   : "scene",
+					"info" 		 : 
+					{
+						"ruleID" :"0x123",
+						"state" : "0",
+						"name" :  "Di ngu",
+						"outPut"  :
+							{
+								"controlDevice" :
+								[
+									{
+										"delay":"10000",
+										"timeOn": "10000",
+										"device":
+										{
+											"connectivityType" : "zigbee",
+											"deviceID" : "0x8E1A" ,
+											"deviceEUI" : "0x588E81FFFE5A3EE8",
+											"child" : "1",
+											"trait" : "traitOnOff",
+											"value" : "On"										
+										}
+									}									
+								]
+							}
+					}
+				}
+			
+			}
+		}
+}

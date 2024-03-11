@@ -1,0 +1,13 @@
+{
+  "typeMessage": "commission",
+  "dataMessage": {
+    "connectivityType": "zigbee",
+    "properties": {
+      "command": "addDevice",
+      "data": {
+        "deviceName": "Plug",
+        "deviceLocate": "Living Room"
+      }
+    }
+  }
+}

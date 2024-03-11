@@ -1,0 +1,9 @@
+{
+  "typeMessage": "requestData",
+  "dataMessage": {
+    "connectivityType": "zigbee",
+    "properties": {
+      "command": "listDevice"
+    }
+  }
+}

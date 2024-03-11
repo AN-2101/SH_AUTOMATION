@@ -1,0 +1,10 @@
+{
+    "requestID": "1587356365924",
+    "status": "success",
+    "typeMessage": "config",
+    "dataMessage": {
+        "properties": {
+            "command": "configGatewayData"
+        }
+    }
+}

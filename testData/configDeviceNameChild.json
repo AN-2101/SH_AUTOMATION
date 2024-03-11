@@ -1,0 +1,16 @@
+{
+  "typeMessage": "config",
+  "dataMessage": {
+    "properties": {
+      "command": "configDeviceData",
+      "data": {
+        "deviceEUI": "0x588E81FFFE5A3EE8",
+        "configType": "childName",
+        "value": {
+          "child": "1",
+          "name": "Child Test"
+        }
+      }
+    }
+  }
+}

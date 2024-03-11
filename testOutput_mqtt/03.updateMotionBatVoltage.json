@@ -1,0 +1,16 @@
+{
+    "typeMessage": "updateData",
+    "dataMessage": {
+        "connectivityType": "zigbee",
+        "properties": {
+            "command": "updateTrait",
+            "data": {
+                "deviceEUI": "0xEC1BBDFFFEC874EC",
+                "child": 1,
+                "trait": "traitBatVoltage",
+                "value": "2.8",
+                "timeStamp": 1607399720032
+            }
+        }
+    }
+}

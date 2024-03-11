@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-02-27T15:04:03.549410" rpa="false" schemaversion="5">
+<suite id="s1" name="Add Scene" source="e:\VNPTTech\Projects\SmartHome2023\AutomationTest\sh_autotest\testSuite\Add_Scene.robot">
+<test id="s1-t1" name="TC FUNC_65" line="8">
+<kw name="Connect MQTT Broker" owner="Mqtt" type="SETUP">
+<kw name="Set Username And Password" owner="MQTTLibrary">
+<arg>${USER_NAME}</arg>
+<arg>${PASSWORD}</arg>
+<status status="PASS" start="2024-02-27T15:04:03.820827" elapsed="0.000000"/>
+</kw>
+<kw name="Connect" owner="MQTTLibrary">
+<msg time="2024-02-27T15:04:03.822450" level="INFO">Connecting to 10.2.204.9 at port 1883</msg>
+<arg>${MQTT_BROKER_ADD}</arg>
+<doc>Connect to an MQTT broker. This is a pre-requisite step for publish
+and subscribe keywords.</doc>
+<status status="PASS" start="2024-02-27T15:04:03.822100" elapsed="0.058898"/>
+</kw>
+<status status="PASS" start="2024-02-27T15:04:03.819831" elapsed="0.062165"/>
+</kw>
+<kw name="Close Network" owner="Mqtt">
+<kw name="Publish Message" owner="Mqtt">
+<kw name="Get File" owner="OperatingSystem">
+<msg time="2024-02-27T15:04:03.884988" level="INFO" html="true">Getting file '&lt;a href="file://E:\VNPTTech\Projects\SmartHome2023\AutomationTest\sh_autotest\testData\closeNetwork.json"&gt;E:\VNPTTech\Projects\SmartHome2023\AutomationTest\sh_autotest\testData\closeNetwork.json&lt;/a&gt;'.</msg>
+<msg time="2024-02-27T15:04:03.924881" level="INFO">${msg} = {
+	"typeMessage":"commission",
+	"dataMessage":
+		{
+			"connectivityType":"zigbee",
+			"properties":
+			{
+				"command":"closeNetWork"
+			}
+		}
+}</msg>
+<var>${msg}</var>
+<arg>${file_path}</arg>
+<doc>Returns the contents of a specified file.</doc>
+<status status="PASS" start="2024-02-27T15:04:03.883991" elapsed="0.040890"/>
+</kw>
+<kw name="Publish" owner="MQTTLibrary">
+<msg time="2024-02-27T15:04:03.924881" level="INFO">Publish topic: MessageOutSideAgentLocalToAgentProcess, message: {
+	"typeMessage":"commission",
+	"dataMessage":
+		{
+			"connectivityType":"zigbee",
+			"properties":
+			{
+				"command":"closeNetWork"
+			}
+		}
+}, qos: 0, retain: False</msg>
+<arg>${PUB_TOPIC}</arg>
+<arg>${msg}</arg>
+<arg>${Qos}</arg>
+<doc>Publish a message to a topic with specified qos and retained flag.
+It is required that a connection has been established using `Connect`
+keyword before using this keyword.</doc>
+<status status="PASS" start="2024-02-27T15:04:03.924881" elapsed="0.001024"/>
+</kw>
+<arg>${CLOSE_NET_PATH}</arg>
+<status status="PASS" start="2024-02-27T15:04:03.883211" elapsed="0.043735"/>
+</kw>
+<status status="PASS" start="2024-02-27T15:04:03.882994" elapsed="0.043952"/>
+</kw>
+<kw name="Publish Message Add Scene" owner="Mqtt">
+<kw name="Publish Message" owner="Mqtt">
+<kw name="Get File" owner="OperatingSystem">
+<msg time="2024-02-27T15:04:03.928238" level="INFO" html="true">Getting file '&lt;a href="file://E:\VNPTTech\Projects\SmartHome2023\AutomationTest\sh_autotest\testData\addScene.json"&gt;E:\VNPTTech\Projects\SmartHome2023\AutomationTest\sh_autotest\testData\addScene.json&lt;/a&gt;'.</msg>
+<msg time="2024-02-27T15:04:03.953396" level="INFO">${msg} = {
+    "commandId": "update",
+    "name": "update",
+    "data": {
+        "typeMessage": "ruleEngine",
+        "dataMessage": {
+            "properties": {
+                "command": "addRule",
+       ...</msg>
+<var>${msg}</var>
+<arg>${file_path}</arg>
+<doc>Returns the contents of a specified file.</doc>
+<status status="PASS" start="2024-02-27T15:04:03.928238" elapsed="0.025158"/>
+</kw>
+<kw name="Publish" owner="MQTTLibrary">
+<msg time="2024-02-27T15:04:03.954397" level="INFO">Publish topic: MessageOutSideAgentLocalToAgentProcess, message: {
+    "commandId": "update",
+    "name": "update",
+    "data": {
+        "typeMessage": "ruleEngine",
+        "dataMessage": {
+            "properties": {
+                "command": "addRule",
+                "data": {
+                    "typeRule": "scene",
+                    "info": {
+                        "ruleID": "0x123",
+                        "state": "0",
+                        "name": "Di ngu",
+                        "outPut": {
+                            "controlDevice": [{
+                                "delay": "10000",
+                                "timeOn": "10000",
+                                "device": {
+                                    "connectivityType": "zigbee",
+                                    "deviceID": "0xD3B8",
+                                    "deviceEUI": "0xE0798DFFFEA7CA12",
+                                    "child": "1",
+                                    "trait": "traitOnOff",
+                                    "value": "On"
+                                }
+                            }]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "commandType": "Control",
+    "recordId": "1587356365924"
+}, qos: 0, retain: False</msg>
+<arg>${PUB_TOPIC}</arg>
+<arg>${msg}</arg>
+<arg>${Qos}</arg>
+<doc>Publish a message to a topic with specified qos and retained flag.
+It is required that a connection has been established using `Connect`
+keyword before using this keyword.</doc>
+<status status="PASS" start="2024-02-27T15:04:03.953396" elapsed="0.001001"/>
+</kw>
+<arg>${ADD_SCENE_PATH}</arg>
+<status status="PASS" start="2024-02-27T15:04:03.928238" elapsed="0.026159"/>
+</kw>
+<status status="PASS" start="2024-02-27T15:04:03.926946" elapsed="0.027451"/>
+</kw>
+<kw name="Subscribe Topic Recive Command" owner="Mqtt">
+<kw name="Subscribe" owner="MQTTLibrary">
+<msg time="2024-02-27T15:04:03.955395" level="INFO">Subscribing to topic: MessageOutSideAgentProcessToAgentLocalCommand</msg>
+<msg time="2024-02-27T15:04:05.092411" level="INFO">${msg} = ['{"commandId":"addRule","name":"addRule","commandType":"ruleEngine","status":"5","updateTime":1709021045272,"responseData":{"requestID":"1587356365924","status":"success","typeMessage":"ruleEngine","...</msg>
+<var>${msg}</var>
+<arg>${TOPIC_MESSAGE_AGENT_PROCESS_TO_AGENT_LOCAL_COMMAND}</arg>
+<arg>${Qos}</arg>
+<arg>${MAX_TIMEOUT}</arg>
+<doc>Subscribe to a topic and return a list of message payloads received
+    within the specified time.</doc>
+<status status="PASS" start="2024-02-27T15:04:03.955395" elapsed="1.137334"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-02-27T15:04:05.095234" level="INFO">${msg_str} = {"commandId":"addRule","name":"addRule","commandType":"ruleEngine","status":"5","updateTime":1709021045272,"responseData":{"requestID":"1587356365924","status":"success","typeMessage":"ruleEngine","da...</msg>
+<var>${msg_str}</var>
+<arg>${msg[0]}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-02-27T15:04:05.092729" elapsed="0.002505"/>
+</kw>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-02-27T15:04:05.096247" level="INFO">${json_data} = {'commandId': 'addRule', 'name': 'addRule', 'commandType': 'ruleEngine', 'status': '5', 'updateTime': 1709021045272, 'responseData': {'requestID': '1587356365924', 'status': 'success', 'typeMessage': ...</msg>
+<var>${json_data}</var>
+<arg>json.loads('''${msg_str}''')</arg>
+<arg>json</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-02-27T15:04:05.095234" elapsed="0.001013"/>
+</kw>
+<return>
+<value>${json_data}</value>
+<status status="PASS" start="2024-02-27T15:04:05.096247" elapsed="0.000000"/>
+</return>
+<msg time="2024-02-27T15:04:05.096247" level="INFO">${add_scene_msg_res} = {'commandId': 'addRule', 'name': 'addRule', 'commandType': 'ruleEngine', 'status': '5', 'updateTime': 1709021045272, 'responseData': {'requestID': '1587356365924', 'status': 'success', 'typeMessage': ...</msg>
+<var>${add_scene_msg_res}</var>
+<status status="PASS" start="2024-02-27T15:04:03.955395" elapsed="1.141834"/>
+</kw>
+<kw name="Validate Msg Add Scene Success" owner="Validate">
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${json_data['commandType']}</arg>
+<arg>ruleEngine</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-02-27T15:04:05.099224" elapsed="0.000996"/>
+</kw>
+<kw name="Should Be Equal" owner="BuiltIn">
+<arg>${json_data['responseData']['status']}</arg>
+<arg>success</arg>
+<doc>Fails if the given objects are unequal.</doc>
+<status status="PASS" start="2024-02-27T15:04:05.101218" elapsed="0.000998"/>
+</kw>
+<arg>${add_scene_msg_res}</arg>
+<status status="PASS" start="2024-02-27T15:04:05.098226" elapsed="0.004471"/>
+</kw>
+<kw name="Disconnect MQTT Broker" owner="Mqtt" type="TEARDOWN">
+<kw name="Disconnect" owner="MQTTLibrary">
+<doc>Disconnect from MQTT Broker.</doc>
+<status status="PASS" start="2024-02-27T15:04:05.103214" elapsed="0.000996"/>
+</kw>
+<status status="PASS" start="2024-02-27T15:04:05.103214" elapsed="0.000996"/>
+</kw>
+<status status="PASS" start="2024-02-27T15:04:03.819831" elapsed="1.285493"/>
+</test>
+<status status="PASS" start="2024-02-27T15:04:03.554355" elapsed="1.553199"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="Add Scene">Add Scene</stat>
+</suite>
+</statistics>
+<errors>
+<msg time="2024-02-27T15:04:03.658658" level="WARN">Error in file 'e:\VNPTTech\Projects\SmartHome2023\AutomationTest\sh_autotest\lib\Mqtt.txt' on line 30: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-27T15:04:03.659519" level="WARN">Error in file 'e:\VNPTTech\Projects\SmartHome2023\AutomationTest\sh_autotest\lib\Mqtt.txt' on line 36: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-27T15:04:03.660290" level="WARN">Error in file 'e:\VNPTTech\Projects\SmartHome2023\AutomationTest\sh_autotest\lib\Mqtt.txt' on line 42: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-27T15:04:03.661223" level="WARN">Error in file 'e:\VNPTTech\Projects\SmartHome2023\AutomationTest\sh_autotest\lib\Mqtt.txt' on line 48: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-27T15:04:03.661223" level="WARN">Error in file 'e:\VNPTTech\Projects\SmartHome2023\AutomationTest\sh_autotest\lib\Mqtt.txt' on line 57: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-27T15:04:03.662254" level="WARN">Error in file 'e:\VNPTTech\Projects\SmartHome2023\AutomationTest\sh_autotest\lib\Mqtt.txt' on line 144: The '[Return]' setting is deprecated. Use the 'RETURN' statement instead.</msg>
+<msg time="2024-02-27T15:04:03.811033" level="ERROR">Error in file 'e:\VNPTTech\Projects\SmartHome2023\AutomationTest\sh_autotest\lib\Validate.txt' on line 4: Importing library 'e:\VNPTTech\Projects\SmartHome2023\AutomationTest\sh_autotest\libpy\process_string.py' failed: IndentationError: unindent does not match any outer indentation level (process_string.py, line 192)
+Traceback (most recent call last):
+  None
+PYTHONPATH:
+  e:\VNPTTech\Projects\SmartHome2023\AutomationTest\sh_autotest\libpy
+  c:\Users\TUANTQ\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_debug_adapter
+  E:\VNPTTech\Projects\SmartHome2023\AutomationTest\sh_autotest
+  c:\Users\TUANTQ\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src
+  c:\Users\TUANTQ\.vscode\extensions\robocorp.robotframework-lsp-1.11.0\src\robotframework_ls\vendored
+  C:\Program Files\Python312\python312.zip
+  C:\Program Files\Python312\DLLs
+  C:\Program Files\Python312\Lib
+  C:\Program Files\Python312
+  C:\Users\TUANTQ\AppData\Roaming\Python\Python312\site-packages
+  C:\Users\TUANTQ\AppData\Roaming\Python\Python312\site-packages\win32
+  C:\Users\TUANTQ\AppData\Roaming\Python\Python312\site-packages\win32\lib
+  C:\Users\TUANTQ\AppData\Roaming\Python\Python312\site-packages\Pythonwin
+  C:\Program Files\Python312\Lib\site-packages</msg>
+</errors>
+</robot>

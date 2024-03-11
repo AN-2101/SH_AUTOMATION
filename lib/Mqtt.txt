@@ -1,0 +1,150 @@
+*** Settings ***
+Library           MQTTLibrary
+Library           OperatingSystem
+Library           jsonschema
+Library           BuiltIn
+Library           String
+Library           Collections
+Resource          ../variable/mqttVariable.txt
+
+*** Keywords ***
+Close Network  #Network Zigbee
+    Publish Message    ${CLOSE_NET_PATH}
+
+Connect MQTT Broker
+    Set Username And Password    ${USER_NAME}   ${PASSWORD}
+    Connect    ${MQTT_BROKER_ADD}
+
+Disconnect MQTT Broker
+    Disconnect
+
+Publish Message
+    [Arguments]    ${file_path}
+    ${msg}    Get File    ${file_path}
+    Publish    ${PUB_TOPIC}    ${msg}    ${Qos}
+
+Subscribe Message
+    ${msg}    Subscribe    ${SUB_TOPIC}    ${Qos}    ${MAX_TIMEOUT}    # Get data payload along 60s
+    ${msg_str}    Set Variable    ${msg[0]}    # Get the first item of list
+    ${json_data}    Evaluate    json.loads('''${msg_str}''')    json    # Convert to json file, and the variable json_data is a python dictionary
+    [RETURN]    ${json_data}
+
+Subscribe Topic Recive Command
+    ${msg}    Subscribe    ${TOPIC_MESSAGE_AGENT_PROCESS_TO_AGENT_LOCAL_COMMAND}    ${Qos}    ${MAX_TIMEOUT}    # Get data payload along 60s
+    ${msg_str}    Set Variable    ${msg[0]}    # Get the first item of list
+    ${json_data}    Evaluate    json.loads('''${msg_str}''')    json    # Convert to json file, and the variable json_data is a python dictionary
+    [RETURN]    ${json_data}
+
+Subscribe Topic Recive Telemetry
+    ${msg}    Subscribe    ${TOPIC_MESSAGE_AGENT_PROCESS_TO_AGENT_LOCAL_TELEMETRY}    ${Qos}    ${MAX_TIMEOUT}    # Get data payload along 60s
+    ${msg_str}    Set Variable    ${msg[0]}    # Get the first item of list
+    ${json_data}    Evaluate    json.loads('''${msg_str}''')    json    # Convert to json file, and the variable json_data is a python dictionary
+    [RETURN]    ${json_data}
+
+Subscribe Topic Recive DeviceStatus
+    ${msg}    Subscribe    ${TOPIC_MESSAGE_AGENT_PROCESS_TO_AGENT_LOCAL_DEVICE_STATUS}    ${Qos}    ${MAX_TIMEOUT}    # Get data payload along 60s
+    ${msg_str}    Set Variable    ${msg[0]}    # Get the first item of list
+    ${json_data}    Evaluate    json.loads('''${msg_str}''')    json    # Convert to json file, and the variable json_data is a python dictionary
+    [RETURN]    ${json_data}
+
+Subscribe Only
+    Subscribe    ${SUB_TOPIC}    ${Qos}    ${MIN_TIMEOUT}
+
+Subscribe List Message
+    [Arguments]    ${TIMEOUT}
+    # RETURN list of message in MAX_TIMEOUT
+    ${msg}    Subscribe    ${SUB_TOPIC}    ${Qos}    ${TIMEOUT}    0
+    [RETURN]    ${msg}
+
+Publish Message With EUI
+    [Arguments]    ${file_path}    ${EUI}
+    ${msg}    Get File    ${file_path}
+    ${json}=    evaluate    json.loads('''${msg}''')    json    # 1. Convert JSON string to a dictionary
+    Set to dictionary    ${json['dataMessage']['properties']['data']}    deviceEUI    ${EUI}    # 2. Modify dictionary
+    ${json_string}=    evaluate    json.dumps(${json})    json    # 3. Convert dictionary back to JSON string
+    Publish    ${PUB_TOPIC}    ${json_string}    ${Qos}
+
+Publish Message With EUI and ID
+    [Arguments]    ${file_path}    ${EUI}    ${ID}
+    ${msg}    Get File    ${file_path}
+    ${json}=    evaluate    json.loads('''${msg}''')    json    # 1. Convert JSON string to a dictionary
+    Set to dictionary    ${json['dataMessage']['properties']['data']}    deviceID    ${ID}    # 2. Modify dictionary
+    Set to dictionary    ${json['dataMessage']['properties']['data']}    deviceEUI    ${EUI}    # 2. Modify dictionary
+    ${json_string}=    evaluate    json.dumps(${json})    json    # 3. Convert dictionary back to JSON string
+    Publish    ${PUB_TOPIC}    ${json_string}    ${Qos}
+
+Publish Message With DeviceEUI And DeviceName
+    [Arguments]    ${file_path}    ${Dev_EUI}    ${Dev_Name}
+    ${msg}    Get File    ${file_path}
+    ${json}=    evaluate    json.loads('''${msg}''')    json    # 1. Convert JSON string to a dictionary
+    Set to dictionary    ${json['dataMessage']['properties']['data']}    deviceEUI    ${Dev_EUI}    # 2. Modify dictionary
+    Set to dictionary    ${json['dataMessage']['properties']['data']}    value    ${Dev_Name}    # 2. Modify dictionary
+    ${json_string}=    evaluate    json.dumps(${json})    json    # 3. Convert dictionary back to JSON string
+    Publish    ${PUB_TOPIC}    ${json_string}    ${Qos}
+
+Publish Message With DeviceEUI And Device Locate
+    [Arguments]    ${file_path}    ${Dev_EUI}    ${Dev_Locate}
+    ${msg}    Get File    ${file_path}
+    ${json}=    evaluate    json.loads('''${msg}''')    json    # 1. Convert JSON string to a dictionary
+    Set to dictionary    ${json['dataMessage']['properties']['data']}    deviceEUI    ${Dev_EUI}    # 2. Modify dictionary
+    Set to dictionary    ${json['dataMessage']['properties']['data']}    value    ${Dev_Locate}    # 2. Modify dictionary
+    ${json_string}=    evaluate    json.dumps(${json})    json    # 3. Convert dictionary back to JSON string
+    Publish    ${PUB_TOPIC}    ${json_string}    ${Qos}
+
+Public Message With DeviceEUI And Child Device Name
+    [Arguments]    ${file_path}    ${Dev_EUI}    ${Child_ID}    ${Child_Dev_Name}
+    ${msg}    Get File    ${file_path}
+    ${json}=    evaluate    json.loads('''${msg}''')    json    # 1. Convert JSON string to a dictionary
+    Set to dictionary    ${json['dataMessage']['properties']['data']}    deviceEUI    ${Dev_EUI}    # 2. Modify dictionary
+    Set to dictionary    ${json['dataMessage']['properties']['data']['value']}    child    ${Child_ID}    # 2. Modify dictionary
+    Set to dictionary    ${json['dataMessage']['properties']['data']['value']}    name    ${Child_Dev_Name}    # 2. Modify dictionary
+    ${json_string}=    evaluate    json.dumps(${json})    json    # 3. Convert dictionary back to JSON string
+    Publish    ${PUB_TOPIC}    ${json_string}    ${Qos}
+
+Public Message Config Gateway
+    [Arguments]    ${file_path}    ${config_Type}    ${value}
+    ${msg}    Get File    ${file_path}
+    ${json}=    evaluate    json.loads('''${msg}''')    json    # 1. Convert JSON string to a dictionary
+    Set to dictionary    ${json['dataMessage']['properties']['data']}    configType    ${config_Type}    # 2. Modify dictionary
+    Set to dictionary    ${json['dataMessage']['properties']['data']}    value    ${value}    # 2. Modify dictionary
+    ${json_string}=    evaluate    json.dumps(${json})    json    # 3. Convert dictionary back to JSON string
+    Publish    ${PUB_TOPIC}    ${json_string}    ${Qos}
+
+Public Message Control Device
+    [Arguments]    ${file_path}    ${Dev_EUI}    ${Child_ID}    ${value}
+    ${msg}    Get File    ${file_path}
+    ${json}=    evaluate    json.loads('''${msg}''')    json    # 1. Convert JSON string to a dictionary
+    Set to dictionary    ${json['dataMessage']['properties']['data']}    deviceEUI    ${Dev_EUI}    # 2. Modify dictionary
+    Set to dictionary    ${json['dataMessage']['properties']['data']}    child    ${Child_ID}    # 2. Modify dictionary
+    Set to dictionary    ${json['dataMessage']['properties']['data']}    value    ${value}    # 2. Modify dictionary
+    ${json_string}=    evaluate    json.dumps(${json})    json    # 3. Convert dictionary back to JSON string
+    Publish    ${PUB_TOPIC}    ${json_string}    ${Qos}
+
+Add Device
+    Publish Message    ${ADD_DEV_PATH}
+    ${add_dev_msg}    Subscribe Message
+    Validate Msg Add Dev Success    ${add_dev_msg}
+
+Check List Device Empty
+    Publish Message    ${LIST_DEV_PATH}
+    ${list_dev_msg}    Subscribe List Message    ${MIN_TIMEOUT}
+    ${result}    PS.Valid_List_Device_None    ${list_dev_msg}
+    Should Be True    ${result}
+
+Check List Device Not Empty
+    Publish Message    ${LIST_DEV_PATH}
+    ${list_dev_msg}    Subscribe List Message    ${MIN_TIMEOUT}
+    ${result}    PS.Valid_List_Devices    ${list_dev_msg}
+    Should Be True    ${result}
+
+Get List Device EUI
+    Publish Message    ${LIST_DEV_PATH}
+    ${list_dev_msg}    Subscribe List Message    ${MIN_TIMEOUT}
+    @{dev_eui_list}    PS.Get_List_Device_EUI    ${list_dev_msg}
+    [RETURN]    @{dev_eui_list}
+
+Get List Device
+    Publish Message    ${LIST_DEV_PATH}
+
+Publish Message Add Scene
+    Publish Message    ${ADD_SCENE_PATH}

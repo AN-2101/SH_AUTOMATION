@@ -1,0 +1,5 @@
+*** Settings ***
+Library           MQTTLibrary
+Resource          ../variable/mqttVariable.txt
+Resource          ../lib/Mqtt.txt
+Resource          ../lib/Validate.txt

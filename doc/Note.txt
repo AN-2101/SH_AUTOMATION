@@ -1,0 +1,12 @@
+1. Add Device: mở network tối đa 60s
+2. Mỗi lần mở Network chỉ add được 01 thiết bị 
+3. Số thiết bị tối đa kết nối đến GW: 32
+4. Thay đổi tên/vị trí thiết bị:
+	- Có thể lưu được cả tiếng Anh, Tiếng việt
+	- Có thể để trống
+	- Giới hạn số kí tự tối đa: Chưa rõ yêu cầu
+	- Trong một lần config, chỉ có thể thay đổi được vị trí hoặc tên thiết bị, ko đổi được cả hai
+	- Trong một lần config, thay đổi được tên/vị trí cho 01 thiết bị?
+6. Buzzer Volume: Từ 0 - 4
+7. Check lại định dạng bản tin List Device for Child
+8. Làm thế nào để kiểm tra thiết bị đã được xóa ở tầng Zigbee hay chưa?

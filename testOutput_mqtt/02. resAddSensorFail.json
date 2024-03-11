@@ -1,0 +1,11 @@
+{
+    "requestID": "1587356365924",
+    "status": "error",
+    "typeMessage": "commission",
+    "dataMessage": {
+        "properties": {
+            "command": "addDevice",
+            "data": "error"
+        }
+    }
+}

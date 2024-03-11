@@ -1,0 +1,7 @@
+*** Settings ***
+Library           MQTTLibrary
+Library           OperatingSystem
+Library           jsonschema
+Library           BuiltIn
+Library           String
+Library           Collections

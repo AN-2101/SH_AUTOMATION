@@ -1,0 +1,11 @@
+{
+	"typeMessage":"commission",
+	"dataMessage":
+		{
+			"connectivityType":"zigbee",
+			"properties":
+			{
+				"command":"closeNetWork"
+			}
+		}
+}

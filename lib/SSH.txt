@@ -1,0 +1,9 @@
+*** Settings ***
+Library           SSHLibrary
+Resource          ../variable/mqttVariable.txt
+
+*** Keywords ***
+Create SSH Session
+    [Arguments]    ${HOST}    ${USER}    ${PASS}
+    Open Connection    ${HOST}    timeout=60
+    Login    ${USER}    ${PASS}

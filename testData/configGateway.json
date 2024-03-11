@@ -1,0 +1,12 @@
+{
+  "typeMessage": "config",
+  "dataMessage": {
+    "properties": {
+      "command": "configGatewayData",
+      "data": {
+        "configType": "buzzerVolume",
+        "value": "3"
+      }
+    }
+  }
+}

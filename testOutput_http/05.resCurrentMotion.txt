@@ -1,0 +1,32 @@
+{
+  "op" : 5,
+  "pc" : {
+    "m2m:sgn" : {
+      "sur" : "sub-0c884de5-8661-4087-aa66-8321bb0e7462",
+      "sud" : false,
+      "nev" : {
+        "rep" : {
+          "m2m:cin" : {
+            "cs" : 342,
+            "ct" : "20201203T105915",
+            "st" : 847,
+            "con" : "{\"commandId\":\"deviceCurrentData\",\"name\":\"deviceCurrentData\",\"commandType\":\"requestData\",\"status\":\"5\",\"updateTime\":1606967962101,\"responseData\":\"{\\\"requestID\\\":\\\"1587356365924\\\",\\\"status\\\":\\\"success\\\",\\\"typeMessage\\\":\\\"requestData\\\",\\\"dataMessage\\\":{\\\"properties\\\":{\\\"command\\\":\\\"deviceCurrentData\\\",\\\"data\\\":[]}}}\",\"recordId\":\"1587356365924\"}",
+            "ty" : 4,
+            "ri" : "cin-14ffe9e1-1e6f-4584-ae72-7aa748340491",
+            "lt" : "20201203T105915",
+            "pi" : "cnt-cd0fbd3a-159d-4f1f-a0e4-313a34253247",
+            "cnf" : "text/plains:0",
+            "rn" : "cin_14ffe9e1-1e6f-4584-ae72-7aa748340491",
+            "et" : "19700101T164536",
+            "cr" : "SAE1dd32fb1-cf81-430b-9749-78dd157ded1f"
+          }
+        },
+        "net" : 3
+      },
+      "cr" : "SAE8793f237-4fdf-49ef-8e70-f4853b2cfd73"
+    }
+  },
+  "to" : "/SAE8793f237-4fdf-49ef-8e70-f4853b2cfd73",
+  "rqi" : "648125d4-b697-4844-a109-54ab9f076dd3",
+  "fr" : "/in-cse"
+}

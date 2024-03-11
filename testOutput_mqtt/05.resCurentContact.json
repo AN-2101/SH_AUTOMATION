@@ -1,0 +1,58 @@
+{
+    "requestID": "1587356365924",
+    "status": "success",
+    "typeMessage": "requestData",
+    "dataMessage": {
+        "properties": {
+            "command": "deviceCurrentData",
+            "data": [
+                {
+                    "deviceType": "typeIASContact",
+                    "deviceName": "",
+                    "deviceLocate": "",
+                    "gatewayID": "BC33ACFFFE3DA95C",
+                    "connectivityType": "zigbee",
+                    "deviceID": "0x7433",
+                    "deviceEUI": "0x5C0272FFFE8F777C",
+                    "deviceInfo": {
+                        "manufacturer": "VNPT",
+                        "model": "model1",
+                        "hwVersion": "1.0",
+                        "swVersion": "1.0"
+                    },
+                    "deviceTrait": {
+                        "deviceChild": [
+                            {
+                                "child": 1,
+                                "childName": "null",
+                                "childInfo": [
+                                    {
+                                        "traitName": "traitAlarmTrigger",
+                                        "bindDirection": "In",
+                                        "value": 0
+                                    },
+                                    {
+                                        "traitName": "traitOpenClose",
+                                        "bindDirection": "In",
+                                        "value": 0
+                                    }
+                                ]
+                            }
+                        ],
+                        "numChild": "1"
+                    },
+                    "customData": {
+                        "data1": "null",
+                        "data2": "null",
+                        "data3": "null"
+                    },
+                    "_id": "Mm1AOyssL2WCf21d",
+                    "devicePower": {
+                        "traitBatVoltage": "3.0",
+                        "traitBatPercent": "100.0"
+                    }
+                }
+            ]
+        }
+    }
+}

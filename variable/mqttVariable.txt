@@ -1,0 +1,96 @@
+*** Variables ***
+${HOST}           10.2.204.9
+${USER}           root
+${PASS}           1
+${MQTT_BROKER_ADD}    10.2.204.9    # Broker Server Address mqtt.eclipse.org
+${USER_NAME}      homegateway
+${PASSWORD}       vnpttechnology
+${PUB_TOPIC}      MessageOutSideAgentLocalToAgentProcess    # Topic for user Publisher MessageOutSideAgentProcessToDeviceManagement
+${SUB_TOPIC}      MessageOutSideAgentProcessToAgentLocalCommand    # Topic for user Subscriber
+${TOPIC_MESSAGE_AGENT_PROCESS_TO_AGENT_LOCAL_COMMAND}   MessageOutSideAgentProcessToAgentLocalCommand
+${TOPIC_MESSAGE_AGENT_PROCESS_TO_AGENT_LOCAL_TELEMETRY}   MessageOutSideAgentProcessToAgentLocalTelemetry
+${TOPIC_MESSAGE_AGENT_PROCESS_TO_AGENT_LOCAL_DEVICE_STATUS}   MessageOutSideAgentProcessToAgentLocalDeviceStatus
+${Qos}            0
+${MAX_TIMEOUT}    60
+${MIN_TIMEOUT}    2
+${AGR_TIMEOUT}    30
+${TIMEOUT_45}     45
+${TIMEOUT_59}     59
+${TIMEOUT_65}     65
+${TIMEOUT_90}     90
+${ADD_DEV_PATH}    ../testData/addDevice.json
+${ADDSW_DEV_PATH}    ../testData/addDeviceSW.json
+${LIST_DEV_PATH}    ../sh_autotest/testData/listDevice.json
+${CLOSE_NET_PATH}    ../sh_autotest/testData/closeNetwork.json
+${REMOVE_DEV_PATH}    ../testData/removeDevice.json
+${CHANGE_DEV_NAME_PATH}    ../testData/configDeviceName.json
+${CHANGE_DEV_LOC_PATH}    ../testData/configDeviceLocate.json
+${CHANGE_CHILD_DEV_NAME_PATH}    ../testData/configDeviceNameChild.json
+${CONTROL_DEVICE_PATH}    ../testData/controlDevice.json
+${CONFIG_GATEWAY_PATH}    ../testData/configGateway.json
+${GATEWAY_DATA_PATH}    ../testData/gatewayData.json
+${ADD_SCENE_PATH}       ../sh_autotest/testData/addScene.json
+${EUI_PLUG_1}     0x588E81FFFE5A4300
+${DEV_NAME_PUG_1}    SmartPlug 1
+${DEV_NAME_PUG_1_VN}    Công tắc
+${DEV_NAME_PUG_MAX}    Smart Plug Max Character Test For Long Line
+${DEV_LOC_PUG_1}    Bed Room 1
+${DEV_LOC_PUG_1_VN}    Phòng ngủ 1
+${DEV_LOC_PUG_MAX}    Smart Plug Max Character Test For Long Line
+${EUI_PLUG_2}     0x588E81FFFE5A3ED1
+${DEV_NAME_PUG_2}    SmartPlug 2
+${DEV_NAME_PUG_2_new}    SmartPlug new test
+${EUI_PLUG_3}     0x588E81FFFE5A4314
+${EUI_PLUG_4}     0xBC33ACFFFED9F568
+${EUI_PLUG_5}     0x588E81FFFE5A4303
+${EUI_SW_1_ThoaLT}    0x588E81FFFE5A3EE8
+${EUI_SW_1}       0x588E81FFFE5A430D
+${EUI_SW_2}       0x588E81FFFE5A3F02
+${EUI_SEN_1}      0x60A423FFFE094154
+${EUI_FIRE_1}     0x5C0272FFFEC4CC8C
+${EUI_CONTACT_1}    0x5C0272FFFE8F777C
+${EUI_MOTION_1}    0xEC1BBDFFFEC876A4
+${ID_SW_1}        0xF4B1
+${ID_SW_2}        0x3A3B
+${ID_PLUG_1}      0xE1E2
+${DEV_NAME_SW_1}    SmartSwitch 1
+${CHILD_ID_1}     1
+${CHILD_ID_2}     2
+${CHILD_ID_3}     3
+${CHILD_DEV_NAME_1}    Child Test 1
+${DEV_TYPE_Plug}    typeSmartPlug
+${DEV_TYPE_Light}    typeOnOffLight
+${DEV_TYPE_Sensor}    typeTempSensor
+${DEV_TYPE_Fire}    typeIASFire
+${DEV_TYPE_Motion}    typeIASMotion
+${DEV_TYPE_Contact}    typeIASContact
+${DEV_TYPE_Err}    typeErr
+${DEV_Name_Plug}    Plug
+${DEV_Name_Light}    OnOffLight
+${DEV_Name_Sensor}    TempSensor
+${DEV_Name_Fire}    IASFire
+${DEV_Name_Motion}    IASMotion
+${DEV_Name_Contact}    IASContact
+${DEV_Name_Err}    Err
+${GW_CF_TYPE_Timezone}    timeZone
+${TIME_ZONE_1}    -8
+${TIME_ZONE_2}    -7
+${TIME_ZONE_3}    0
+${TIME_ZONE_4}    7
+${TIME_ZONE_5}    8
+${TIME_ZONE_6}    a
+${GW_CF_TYPE_Buzz_Status}    buzzerStatus
+${BUZZ_STATUS_1}    0
+${BUZZ_STATUS_2}    1
+${BUZZ_STATUS_3}    2
+${BUZZ_STATUS_4}    ON
+${BUZZ_STATUS_5}    OFF
+${GW_CF_TYPE_Buzz_Volume}    buzzerVolume
+${BUZZ_VOLUME_Negative}    -1
+${BUZZ_VOLUME_0}    0
+${BUZZ_VOLUME_1}    1
+${BUZZ_VOLUME_2}    2
+${BUZZ_VOLUME_3}    3
+${BUZZ_VOLUME_4}    4
+${BUZZ_VOLUME_5}    5
+${BUZZ_VOLUME_a}    a

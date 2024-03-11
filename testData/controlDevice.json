@@ -1,0 +1,15 @@
+{
+  "typeMessage": "control",
+  "dataMessage": {
+    "connectivityType": "zigbee",
+    "properties": {
+      "command": "controlDevice",
+      "data": {
+        "deviceEUI": "0x588E81FFFE5A3EC5",
+        "child": "2",
+        "traitName": "traitOnOff",
+        "value": "On"
+      }
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "op" : 5,
+  "pc" : {
+    "m2m:sgn" : {
+      "sur" : "sub-0c884de5-8661-4087-aa66-8321bb0e7462",
+      "sud" : false,
+      "nev" : {
+        "rep" : {
+          "m2m:cin" : {
+            "cs" : 361,
+            "ct" : "20201203T154723",
+            "st" : 861,
+            "con" : "{\"commandId\":\"removeDevice\",\"name\":\"removeDevice\",\"commandType\":\"commission\",\"status\":\"5\",\"updateTime\":1606985250121,\"responseData\":\"{\\\"requestID\\\":\\\"1587356365924\\\",\\\"status\\\":\\\"success\\\",\\\"typeMessage\\\":\\\"commission\\\",\\\"dataMessage\\\":{\\\"properties\\\":{\\\"command\\\":\\\"removeDevice\\\",\\\"data\\\":{\\\"deviceEUI\\\":\\\"0x5C0272FFFEC4CC8C\\\"}}}}\",\"recordId\":\"1587356365924\"}",
+            "ty" : 4,
+            "ri" : "cin-618aff50-5017-40a0-8110-db886cdc26ff",
+            "lt" : "20201203T154723",
+            "pi" : "cnt-cd0fbd3a-159d-4f1f-a0e4-313a34253247",
+            "cnf" : "text/plains:0",
+            "rn" : "cin_618aff50-5017-40a0-8110-db886cdc26ff",
+            "et" : "19700101T164536",
+            "cr" : "SAE1dd32fb1-cf81-430b-9749-78dd157ded1f"
+          }
+        },
+        "net" : 3
+      },
+      "cr" : "SAE8793f237-4fdf-49ef-8e70-f4853b2cfd73"
+    }
+  },
+  "to" : "/SAE8793f237-4fdf-49ef-8e70-f4853b2cfd73",
+  "rqi" : "3a0bcd7b-f07f-4003-bed1-3c5089e489bf",
+  "fr" : "/in-cse"
+}

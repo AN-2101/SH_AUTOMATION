@@ -1,0 +1,32 @@
+{
+  "op" : 5,
+  "pc" : {
+    "m2m:sgn" : {
+      "sur" : "sub-0c884de5-8661-4087-aa66-8321bb0e7462",
+      "sud" : false,
+      "nev" : {
+        "rep" : {
+          "m2m:cin" : {
+            "cs" : 1089,
+            "ct" : "20201203T105400",
+            "st" : 823,
+            "con" : "{\"commandId\":\"deviceCurrentData\",\"name\":\"deviceCurrentData\",\"commandType\":\"requestData\",\"status\":\"5\",\"updateTime\":1606967647672,\"responseData\":\"{\\\"requestID\\\":\\\"1587356365924\\\",\\\"status\\\":\\\"success\\\",\\\"typeMessage\\\":\\\"requestData\\\",\\\"dataMessage\\\":{\\\"properties\\\":{\\\"command\\\":\\\"deviceCurrentData\\\",\\\"data\\\":[{\\\"deviceType\\\":\\\"typeIASContact\\\",\\\"deviceName\\\":\\\"\\\",\\\"deviceLocate\\\":\\\"\\\",\\\"gatewayID\\\":\\\"BC33ACFFFE3DA95C\\\",\\\"connectivityType\\\":\\\"zigbee\\\",\\\"deviceID\\\":\\\"0x7433\\\",\\\"deviceEUI\\\":\\\"0x5C0272FFFE8F777C\\\",\\\"deviceInfo\\\":{\\\"manufacturer\\\":\\\"VNPT\\\",\\\"model\\\":\\\"model1\\\",\\\"hwVersion\\\":\\\"1.0\\\",\\\"swVersion\\\":\\\"1.0\\\"},\\\"deviceTrait\\\":{\\\"deviceChild\\\":[{\\\"child\\\":1,\\\"childName\\\":\\\"null\\\",\\\"childInfo\\\":[{\\\"traitName\\\":\\\"traitAlarmTrigger\\\",\\\"bindDirection\\\":\\\"In\\\",\\\"value\\\":0},{\\\"traitName\\\":\\\"traitOpenClose\\\",\\\"bindDirection\\\":\\\"In\\\",\\\"value\\\":0}]}],\\\"numChild\\\":\\\"1\\\"},\\\"customData\\\":{\\\"data1\\\":\\\"null\\\",\\\"data2\\\":\\\"null\\\",\\\"data3\\\":\\\"null\\\"},\\\"_id\\\":\\\"Mm1AOyssL2WCf21d\\\",\\\"devicePower\\\":{\\\"traitBatVoltage\\\":\\\"3.0\\\",\\\"traitBatPercent\\\":\\\"100.0\\\"}}]}}}\",\"recordId\":\"1587356365924\"}",
+            "ty" : 4,
+            "ri" : "cin-3887c90e-a4dd-4f3e-8499-e030ebd90065",
+            "lt" : "20201203T105400",
+            "pi" : "cnt-cd0fbd3a-159d-4f1f-a0e4-313a34253247",
+            "cnf" : "text/plains:0",
+            "rn" : "cin_3887c90e-a4dd-4f3e-8499-e030ebd90065",
+            "et" : "19700101T164536",
+            "cr" : "SAE1dd32fb1-cf81-430b-9749-78dd157ded1f"
+          }
+        },
+        "net" : 3
+      },
+      "cr" : "SAE8793f237-4fdf-49ef-8e70-f4853b2cfd73"
+    }
+  },
+  "to" : "/SAE8793f237-4fdf-49ef-8e70-f4853b2cfd73",
+  "rqi" : "d1431f25-a01c-4c41-b1f1-f78318cd21cf",
+  "fr" : "/in-cse"
+}

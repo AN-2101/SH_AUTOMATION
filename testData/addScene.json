@@ -1,0 +1,36 @@
+{
+    "commandId": "update",
+    "name": "update",
+    "data": {
+        "typeMessage": "ruleEngine",
+        "dataMessage": {
+            "properties": {
+                "command": "addRule",
+                "data": {
+                    "typeRule": "scene",
+                    "info": {
+                        "ruleID": "0x123",
+                        "state": "0",
+                        "name": "Di ngu",
+                        "outPut": {
+                            "controlDevice": [{
+                                "delay": "10000",
+                                "timeOn": "10000",
+                                "device": {
+                                    "connectivityType": "zigbee",
+                                    "deviceID": "0xD3B8",
+                                    "deviceEUI": "0xE0798DFFFEA7CA12",
+                                    "child": "1",
+                                    "trait": "traitOnOff",
+                                    "value": "On"
+                                }
+                            }]
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "commandType": "Control",
+    "recordId": "1587356365924"
+}

@@ -1,0 +1,32 @@
+{
+  "op" : 5,
+  "pc" : {
+    "m2m:sgn" : {
+      "sur" : "sub-8abc4461-226c-4dd6-8078-a3e54d14957e",
+      "sud" : false,
+      "nev" : {
+        "rep" : {
+          "m2m:cin" : {
+            "cs" : 220,
+            "ct" : "20201203T102751",
+            "st" : 6700,
+            "con" : "{\"typeMessage\":\"updateData\",\"dataMessage\":{\"connectivityType\":\"zigbee\",\"properties\":{\"command\":\"updateTrait\",\"data\":{\"deviceEUI\":\"0x588E81FFFE5A42DA\",\"child\":1,\"trait\":\"traitOnOff\",\"value\":1,\"timeStamp\":1606966078733}}}}",
+            "ty" : 4,
+            "ri" : "cin-a4c95b29-59dc-408d-be8d-0234753f0505",
+            "lt" : "20201203T102751",
+            "pi" : "cnt-a188cfaa-0ffe-4556-94d5-ea5999b01649",
+            "cnf" : "text/plains:0",
+            "rn" : "cin_a4c95b29-59dc-408d-be8d-0234753f0505",
+            "et" : "19700101T164536",
+            "cr" : "SAE1dd32fb1-cf81-430b-9749-78dd157ded1f"
+          }
+        },
+        "net" : 3
+      },
+      "cr" : "SAE8793f237-4fdf-49ef-8e70-f4853b2cfd73"
+    }
+  },
+  "to" : "/SAE8793f237-4fdf-49ef-8e70-f4853b2cfd73",
+  "rqi" : "3278a427-cdaf-419a-9343-18dd6f9613bb",
+  "fr" : "/in-cse"
+}

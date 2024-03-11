@@ -1,0 +1,71 @@
+{
+    "requestID": "1587356365924",
+    "status": "success",
+    "typeMessage": "requestData",
+    "dataMessage": {
+        "properties": {
+            "command": "deviceCurrentData",
+            "data": [
+                {
+                    "deviceType": "typeOnOffLight",
+                    "deviceName": "",
+                    "deviceLocate": "",
+                    "gatewayID": "BC33ACFFFE3DA95C",
+                    "connectivityType": "zigbee",
+                    "deviceID": "0xE80E",
+                    "deviceEUI": "0x588E81FFFE5A3F02",
+                    "deviceInfo": {
+                        "manufacturer": "VNPT",
+                        "model": "model1",
+                        "hwVersion": "1.0",
+                        "swVersion": "1.0"
+                    },
+                    "deviceTrait": {
+                        "deviceChild": [
+                            {
+                                "child": 3,
+                                "childName": "null",
+                                "childInfo": [
+                                    {
+                                        "traitName": "traitOnOff",
+                                        "bindDirection": "Out",
+                                        "value": 1
+                                    }
+                                ]
+                            },
+                            {
+                                "child": 2,
+                                "childName": "null",
+                                "childInfo": [
+                                    {
+                                        "traitName": "traitOnOff",
+                                        "bindDirection": "Out",
+                                        "value": 0
+                                    }
+                                ]
+                            },
+                            {
+                                "child": 1,
+                                "childName": "null",
+                                "childInfo": [
+                                    {
+                                        "traitName": "traitOnOff",
+                                        "bindDirection": "Out",
+                                        "value": 1
+                                    }
+                                ]
+                            }
+                        ],
+                        "numChild": "3"
+                    },
+                    "customData": {
+                        "data1": "null",
+                        "data2": "null",
+                        "data3": "null"
+                    },
+                    "_id": "u6ZHGHNKJ1auKUWA"
+                }
+            ]
+        }
+    }
+}

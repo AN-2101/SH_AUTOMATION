@@ -1,0 +1,714 @@
+A-Automation
+1. Datamanagement send List Device Tree to Rule Engine
+Topic: MessageOutSideDataManagementToRuleEngine
+Payload:
+
+{
+	"typeMessage":"updateData",
+	"dataMessage":
+		{
+			"properties":
+			{
+				"command" 			: "updateDBTreeBootUp",
+				"data":
+[
+	{
+		"deviceType": "typeTempSensor",
+		"deviceName": "Switch",
+		"deviceLocate": "Kitchen",
+		"deviceIcon": "iconSwitch",
+		"gatewayID": "588E81FFFE5A3ED0",
+		"connectivityType": "zigbee",
+		"deviceID": "0xA11E",
+		"deviceEUI": "0xEC1BBDFFFEC3DDB2",
+		"deviceInfo": {
+			"manufacturer": "VNPT",
+			"model": "model1",
+			"hwVersion": "1.0",
+			"swVersion": "1.0"
+		},
+		"deviceTrait": {
+			"deviceChild": [
+				{
+					"child": 1,
+					"childName": "null",
+					"childInfo": [
+						{
+							"traitName": "traitHumidity",
+							"value": "40"
+						}
+					]
+				},
+				{
+					"child": 2,
+					"childName": "null",
+					"childInfo": [
+						{
+							"traitName": "traitHumidity",
+							"value": "60"
+						}
+					]
+				},
+				{
+					"child": 3,
+					"childName": "null",
+					"childInfo": [
+						{
+							"traitName": "traitHumidity",
+							"value": "70"
+						}
+					]
+				}
+			],
+			"numChild": "3"
+		},
+		"customData": {
+			"data1": "null",
+			"data2": "null",
+			"data3": "null"
+		},
+		"_id": "bPLVPz37VNxqDhAj"
+	},
+	{
+		"deviceType": "typeTempSensor",
+		"deviceName": "Switch",
+		"deviceLocate": "Kitchen",
+		"deviceIcon": "iconSwitch",
+		"gatewayID": "588E81FFFE5A3ED1",
+		"connectivityType": "zigbee",
+		"deviceID": "0xA11E",
+		"deviceEUI": "0xEC1BBDFFFEC3DDB3",
+		"deviceInfo": {
+			"manufacturer": "VNPT",
+			"model": "model1",
+			"hwVersion": "1.0",
+			"swVersion": "1.0"
+		},
+		"deviceTrait": {
+			"deviceChild": [
+				{
+					"child": 1,
+					"childName": "null",
+					"childInfo": [
+						{
+							"traitName": "traitHumidity",
+							"value": "70"
+						}
+					]
+				},
+				{
+					"child": 2,
+					"childName": "null",
+					"childInfo": [
+						{
+							"traitName": "traitHumidity",
+							"value": "80"
+						}
+					]
+				},
+				{
+					"child": 3,
+					"childName": "null",
+					"childInfo": [
+						{
+							"traitName": "traitHumidity",
+							"value": "10"
+						}
+					]
+				}
+			],
+			"numChild": "3"
+		},
+		"customData": {
+			"data1": "null",
+			"data2": "null",
+			"data3": "null"
+		},
+		"_id": "bPLVPz37VNxqDhAj"
+	},
+	{
+		"deviceType": "typeIASMotion",
+		"deviceName": "Motion",
+		"deviceLocate": "Kitchen",
+		"deviceIcon": "iconSwitch",
+		"gatewayID": "588E81FFFE5A3ED1",
+		"connectivityType": "zigbee",
+		"deviceID": "0xA11E",
+		"deviceEUI": "0xAAAAAAAAAAAAAAAA",
+		"deviceInfo": {
+			"manufacturer": "VNPT",
+			"model": "model1",
+			"hwVersion": "1.0",
+			"swVersion": "1.0"
+		},
+		"deviceTrait": {
+			"deviceChild": [
+				{
+					"child": 1,
+					"childName": "null",
+					"childInfo": [
+						{
+							"traitName": "traitAlarmTrigger",
+							"value": "1"
+						}
+					]
+				}
+			],
+			"numChild": "1"
+		},
+		"customData": {
+			"data1": "null",
+			"data2": "null",
+			"data3": "null"
+		},
+		"_id": "bPLVPz37VNxqDhAj"
+	},
+	{
+		"deviceType": "typeIASMotion",
+		"deviceName": "Motion",
+		"deviceLocate": "Kitchen",
+		"deviceIcon": "iconSwitch",
+		"gatewayID": "588E81FFFE5A3ED1",
+		"connectivityType": "zigbee",
+		"deviceID": "0xA11E",
+		"deviceEUI": "0xBBBBBBBBBBBBBBBBBB",
+		"deviceInfo": {
+			"manufacturer": "VNPT",
+			"model": "model1",
+			"hwVersion": "1.0",
+			"swVersion": "1.0"
+		},
+		"deviceTrait": {
+			"deviceChild": [
+				{
+					"child": 1,
+					"childName": "null",
+					"childInfo": [
+						{
+							"traitName": "traitAlarmTrigger",
+							"value": "1"
+						}
+					]
+				}
+			],
+			"numChild": "1"
+		},
+		"customData": {
+			"data1": "null",
+			"data2": "null",
+			"data3": "null"
+		},
+		"_id": "bPLVPz37VNxqDhAj"
+	},
+	{
+		"deviceType": "typeIASMotion",
+		"deviceName": "Motion",
+		"deviceLocate": "Kitchen",
+		"deviceIcon": "iconSwitch",
+		"gatewayID": "588E81FFFE5A3ED1",
+		"connectivityType": "zigbee",
+		"deviceID": "0xA11E",
+		"deviceEUI": "0xCCCCCCCCCCCCCCCCCCC",
+		"deviceInfo": {
+			"manufacturer": "VNPT",
+			"model": "model1",
+			"hwVersion": "1.0",
+			"swVersion": "1.0"
+		},
+		"deviceTrait": {
+			"deviceChild": [
+				{
+					"child": 1,
+					"childName": "null",
+					"childInfo": [
+						{
+							"traitName": "traitAlarmTrigger",
+							"value": "1"
+						}
+					]
+				}
+			],
+			"numChild": "1"
+		},
+		"customData": {
+			"data1": "null",
+			"data2": "null",
+			"data3": "null"
+		},
+		"_id": "bPLVPz37VNxqDhAj"
+	}
+]
+			}
+		}
+}
+
+
+*** At RuleEngine
+JUMP to handleMessageOutSideDataManagementComming
+--->>>Rule Engine handleMessageOutSideDataManagementComming<<<---typeMessage: updateData:
+JUMP TO messageFromDataManagement --->>> handleTypeCommand
+	handleTypeCommand --->>> updateDBTreeBootUp
+		Jump to handleMessageUpdateFBTreeFromDataManagementWhenBootUp
+		JUMP to sendDataToAutomationHandle
+		JUMP to ruleEngineSendMessage - publishMessageToAutomation
+
+*** At Automation
+JUMP to Automation --- handleMessageInSideRuleEngineComming
+JUMP TO messageFromAgentProcess --->>> handleTypeCommand
+	handleTypeCommand --->>> updateDBTreeBootUp
+		JUMP to hanldeUpdateDeviceDBTreeBootUp
+		Jump to handleGetListDeviceDbTreeWhenBootUp
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2. Add Rule Automation
+Topic: MessageOutSideAgentProcessToRuleEngine
+Payload: 
+{
+	"typeMessage":"ruleEngine",
+	"dataMessage":
+		{
+			"properties":
+			{
+				"command" 		 : "addRule",
+				"data":
+				{
+					"typeRule"   : "automation",
+					"info" 		 : 
+					{
+	"ruleID":"0x15",
+	"state":"1",
+	"inPut":
+		{
+			"condition" : "or",
+			"time" :
+				[
+					{
+						"start"		:{"hour"	:"4", "minute":"9"}, 
+						"end"		:{"hour"	:"", "minute":""},
+						"dayOfWeek"	:[0,1,2,3,4,5,6],
+						"flagIndex"	:"0"
+					}
+				],
+			"deviceStatus" : 
+				[],
+			"sensorStatus" : 
+				[]
+		},
+	"outPut":
+		{
+			"controlDevice" : [
+				{
+					"delay":"3000",
+					"timeOn": "2000",
+					"device":
+					{
+						"connectivityType" : "zigbee",
+						"deviceID" : "0x15",
+						"deviceEUI" : "0x15",
+						"child" : "1",
+						"trait" : "traitOnOff",
+						"value" : "On"
+					}
+				}
+			],
+			"runScene" : [],
+			"alarmTrigger" :[]
+		}
+					}
+				}
+			
+			}
+		}
+}
+
+
+
+
+
+				{
+					"ruleID":"0x1",
+					"state" : "1"
+				}
+
+				{
+					"delay":"3000",
+					"timeOn": "60000",
+					"device":
+					{
+						"deviceID" : "",
+						"deviceEUI" : "",
+						"child" : "",
+						"trait" : "",
+						"value" : ""
+					}
+				}	
+				,							
+				{
+					"delay":"3000",
+					"timeOn": "30000",
+					"device":
+					{
+						"deviceID" : "",
+						"deviceEUI" : "",
+						"child" : "",
+						"trait" : "",
+						"value" : ""
+					}
+				}
+
+
+***At RuleEngine:
+JUMP to ruleEngine --- handleMessageOutSideAgentProcessComming
+--->>>Rule Engine handleMessageOutSideAgentProcessComming<<<---typeMessage: ruleEngine
+JUMP TO messageFromAgentProcess --->>> handleTypeData
+	handleTypeData --->>> automation
+		JUMP to sendDataToAutomationHandle
+		JUMP to ruleEngineSendMessage - publishMessageToAutomation
+
+*** At Automation
+JUMP to Automation --- handleMessageInSideRuleEngineComming
+JUMP TO messageFromAgentProcess --->>> handleTypeCommand
+	handleTypeCommand --->>> addRule
+	JUMP TO hanldeAddRule automation
+	infoAddRule (check Rule Add)
+	Jump to responseAddRule
+	Jump to insertAutomation
+		Lần đầu(NẾu chưa có Rule Automation nào): This is the FIRST TIME ADD RULE
+												  JUMP to handldeAddDataDBTree1st
+		Các lần sau: This is the N TIME ADD RULE
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3. Device Management send object Device Data to RuleEngine
+Topic: MessageOutSideDeviceManagementToRuleEngine
+Payload: 
+{
+	"typeMessage":"updateData",
+	"dataMessage":
+		{
+			"properties":
+			{
+				"command" 			: "updateTrait",
+				"data":
+				{
+					"deviceEUI" : "0xEC1BBDFFFEC3DDB2",
+					"child" : "1",
+					"trait" : "traitHumidity",
+					"value" : "40"
+				}				
+			}
+		}
+}
+
+
+
+
+
+
+
+
+{
+	"typeMessage":"updateData",
+	"dataMessage":
+		{
+			"properties":
+			{
+				"command" 			: "updateTrait",
+				"data":
+				{
+					"deviceEUI" : "0xAAAAAAAAAAAAAAAA",
+					"child" : "1",
+					"trait" : "traitAlarmTrigger",
+					"value" : "0"
+				}				
+			}
+		}
+}
+
+*** At RuleEngine:
+JUMP to handleMessageOutSideDeviceManagementComming
+--->>>Rule Engine handleMessageOutSideDeviceManagementComming<<<---typeMessage: updateData
+JUMP TO messageFromDeviceManagement --->>> handleTypeCommand
+	handleTypeCommand --->>> updateTrait
+	JUMP to handleMessageUpdateTraitFromDeviceManagement
+	messageForAutomation (check message)
+	JUMP to sendDataToAutomationHandle
+
+*** At Automation
+JUMP to Automation --- handleMessageInSideRuleEngineComming
+JUMP TO messageFromRuleEngine --->>> handleTypeCommand
+messageParse.command: updateTrait
+	handleTypeCommand --->>> updateTrait
+	JUMP to hanldeUpdateDeviceTrait
+	messageParse (check object trait)
+	case source ---> deviceManagemet
+	
+
+4. OutPut:
+check INPUT SUCCESS SUCCESS SUCCESS, jumpto handle OUTPUT!!!
+JUMP to handleOutPutRunScene
+	Nếu có Scene: Have to runScene at OutPut!!!
+				  SUCCESS JUMP to sendMessageControlScene ruleSceneID
+				  JUMP to automationSendMessage - publishMessageToRuleEngine				  
+	Nếu không có Scene: ERROR Dont have to runScene at OutPut!!!
+	
+JUMP to handleOutPutControlDevice SUCCESS
+	Nếu có ControlDevice: SUCCESS Have to controlDevice
+						  SUCCESS SUCCESS SUCCESS Start Time Delay INDEX (vị trí thiết bị)---thời gian bắt đầu tính delay
+						  KHi hết timeOut: JUMP To controlDevice<==============================>
+										   SUCCESS SUCCESS SUCCESS End Time Delay INDEX (vị trí thiết bị) RuleID: (check RuleID)  ---thời gian kết thúc delay
+										   Nếu Timeon khác -1: Have to Revert
+															   JUMP To sendMessageControlDevice==============>>>>> deviceEUI (check các thông tin điều khiển thiết bị)
+												KHi hết Timeon: JUMP To sendMessageControlDevice==============>>>>> deviceEUI
+															    SUCCESS SUCCESS SUCCESS End Time On (thời gian kết thúc time on)
+																JUMP To sendMessageControlDevice==============>>>>> deviceEUI (check các thông tin điều khiển thiết bị)
+										
+	Nếu không có ControlDevice: ERROR Dont Have to controlDevice
+	
+						  
+
+
+
+B-Scene
+1. Add rule Scene
+Topic: Topic: MessageOutSideAgentProcessToRuleEngine
+Payload: 
+{
+	"typeMessage":"ruleEngine",
+	"dataMessage":
+		{
+			"properties":
+			{
+				"command" 		 : "addRule",
+				"data":
+				{
+					"typeRule"   : "scene",
+					"info" 		 : 
+					{
+						"ruleID" :"0x123",
+						"state" : "1",
+						"name" :  "Di ngu",
+						"outPut"  :
+							{
+								"controlDevice" :
+								[
+									{
+										"delay":"10000",
+										"timeOn": "10000",
+										"device":
+										{
+											"connectivityType" : "zigbee",
+											"deviceID" : "1" ,
+											"deviceEUI" : "1",
+											"child" : "1",
+											"trait" : "traitOnOff",
+											"value" : "On"										
+										}
+									}							
+								]
+							}
+					}
+				}
+			
+			}
+		}
+}
+
+***Rule Engine:
+JUMP to ruleEngine --- handleMessageOutSideAgentProcessComming
+--->>>Rule Engine handleMessageOutSideAgentProcessComming<<<---typeMessage: ruleEngine
+JUMP TO messageFromAgentProcess --->>> handleTypeData
+	handleTypeData --->>> scene
+
+***Scene
+JUMP to handleMessageInSideRuleEngineComming
+JUMP TO messageFromAgentProcess --->>> handleTypeCommand
+	handleTypeCommand --->>> addRule
+	JUMP TO hanldeAddRule
+	infoAddRule (check info add rule)
+	JUMP TO responseAddRule
+	JUMP to sceneSendMessage - publishMessageToRuleEngine
+	JUMP to insertRuleScene_DB
+	JUMP to insertRuleScene_RAM
+	
+2. Delete Rule
+Topic: Topic: MessageOutSideAgentProcessToRuleEngine
+Payload: 
+{
+	"typeMessage":"ruleEngine",
+	"dataMessage":
+		{
+			"properties":
+			{
+				"command" 		 : "deleteRule",
+				"data":
+				{
+					"typeRule"   : "scene",
+					"info" 		 : 
+					{
+						"ruleID" : 	  "0x123"
+					}
+				}
+			
+			}
+		}
+}
+
+
+***Rule Engine:
+JUMP to ruleEngine --- handleMessageOutSideAgentProcessComming
+--->>>Rule Engine handleMessageOutSideAgentProcessComming<<<---typeMessage: ruleEngine
+JUMP TO messageFromAgentProcess --->>> handleTypeData
+	handleTypeData --->>> scene
+
+***Scene
+JUMP to handleMessageInSideRuleEngineComming
+JUMP TO messageFromAgentProcess --->>> handleTypeCommand
+	handleTypeCommand --->>> deltetRule
+	JUMP TO hanldeDeleteRule
+	infoDeleteRule (check info delete rule)
+	JUMP TO responseDeleteRule
+	JUMP to sceneSendMessage - publishMessageToRuleEngine	
+
+
+3. toggle Rule
+Topic: Topic: MessageOutSideAgentProcessToRuleEngine
+Payload: 
+{
+	"typeMessage":"ruleEngine",
+	"dataMessage":
+		{
+			"properties":
+			{
+				"command" 		 : "toggleRule",
+				"data":
+				{
+					"typeRule"   : "scene",
+					"info" 		 : 
+					{
+						"ruleID" : 	  "0x123",
+						"state"  :   "0"
+					}
+				}
+			
+			}
+		}
+}
+
+
+***Rule Engine:
+JUMP to ruleEngine --- handleMessageOutSideAgentProcessComming
+--->>>Rule Engine handleMessageOutSideAgentProcessComming<<<---typeMessage: ruleEngine
+JUMP TO messageFromAgentProcess --->>> handleTypeData
+	handleTypeData --->>> scene
+
+***Scene
+JUMP to handleMessageInSideRuleEngineComming
+JUMP TO messageFromAgentProcess --->>> handleTypeCommand
+	handleTypeCommand --->>> toggleRule
+	JUMP TO hanldeToggleRule
+	infoToggleRule (check info toggle rule)
+	JUMP TO responseToggleRule
+	JUMP to sceneSendMessage - publishMessageToRuleEngine	
+
+
+
+5. Control Rule
+Topic: Topic: MessageOutSideAgentProcessToRuleEngine
+Payload: 
+{
+	"typeMessage":"ruleEngine",
+	"dataMessage":
+		{
+			"properties":
+			{
+				"command" 		 : "controlRule",
+				"data":
+				{
+					"typeRule"   : "scene",
+					"info" 		 : 
+					{
+						"ruleID" : 	  "0x123",
+						"state"  :   "1"
+					}
+				}
+			
+			}
+		}
+}
+
+
+***Rule Engine:
+JUMP to ruleEngine --- handleMessageOutSideAgentProcessComming
+--->>>Rule Engine handleMessageOutSideAgentProcessComming<<<---typeMessage: ruleEngine
+JUMP TO messageFromAgentProcess --->>> handleTypeData
+	handleTypeData --->>> scene
+
+***Scene
+JUMP to handleMessageInSideRuleEngineComming
+JUMP TO messageFromAgentProcess --->>> handleTypeCommand
+	handleTypeCommand --->>> controlRule
+	JUMP TO hanldeControlRule
+	infoControlRule (check info control rule)
+	JUMP to onOffScene
+		Nếu state = 1: handleOffScene
+					   JUMP to handleOnScene SUCCESS SUCCESS
+					   JUMP To sendMessageNotiHandleScene==============>>>>
+					   JUMP to sceneSendMessage - publishMessageToRuleEngine
+					   SUCCESS SUCCESS SUCCESS Start Time Delay ruleID (check RuleID) --- (checkTime)
+					   JUMP To controlDevice<==============================>
+					   SUCCESS SUCCESS SUCCESS End Time Delay ruleID (check RuleID) --- (checkTime)
+					   Nếu timeOn khác -1 : Have to Revert
+											JUMP To sendMessageControlDevice==============>>>>>
+											Jump to revertDevice
+											SUCCESS SUCCESS SUCCESS End Time On (checkTime)
+											obj_device: thông tin revert Device
+											JUMP To sendMessageControlDevice==============>>>>>
+											
+					   NẾu timeOn = -1    : No need to Revert Device
+										    JUMP To sendMessageControlDevice==============>>>>>
+		NẾu state = 0: handleOffScene
+
+
+
+
+
+
+
+
+
+
+
+
+
+

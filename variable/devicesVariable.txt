@@ -1,0 +1,79 @@
+*** Setting ***
+Suite Teardown    Close All Connections
+Library           Telnet
+Library           SeleniumLibrary
+Library           OperatingSystem
+Resource          ../Variable/Telnet.txt
+Library           ../Libpy/Process.py
+Library           String
+Library           BuiltIn
+Library           Collections
+Library           jsonschema
+
+*** Variables ***
+${time_out}       10
+#Check Dehaze mode default
+${cmd_check_Dehaze_default }    test_rfmsg    0 47
+${Res_check_Dehaze_default}    [/home/nhatnd/Origin2701/ipcam_homev2/rts39xx_sdk_v3.3.3/out/rts3913n_base/build/rainbow/capture/test_rfmsg.c:main 266]===>>>:ISP informations:+Name:dehaze+MinValue:0+MaxValue:1+Step:1+DefaultValue:0+Current Value:0#
+#Set ON Dehaze
+${cmd_set_Dehaze_On}    test_rfmsg  1 47 1
+${Res_cmd_set_Dehaze_On}    result:0#
+#Set OFF 3DR
+${cmd_set_Dehaze_Off}    test_rfmsg  1 47 0
+${Res_cmd_set_Dehaze_Off}    result:0#
+#Set Dehaze False
+${cmd_set_Dehaze_False }    test_rfmsg    1 47 2
+${Res_cmd_set_Dehaze_False}    sendrfmsg00040002ret14result:14#
+
+*** Test Case ***
+Check Dehaze mode default
+    Open Connection telnet
+    Login telnet
+    Write    ${cmd_check_Dehaze_mode_default}
+    ${output}    Read Until    0#
+    Log to console    ${output}
+    #Sleep    ${time_out}
+    ${result}    Get_Info_Device    ${output}    ${Res_check_Dehaze_mode_default}
+    Should Be True    ${result}
+    Sleep    ${time_out}
+    Close All Connections
+
+Set ON Dehaze
+    Open Connection telnet
+    Login telnet
+    Write    ${cmd_set_Dehaze_On}
+    ${output}    Read Until    0#
+    Sleep    ${time_out}
+    Log to console    ${output}
+    ${result}    Get_Info_Device    ${output}    ${Res_cmd_set_Dehaze_On}
+    Should Be True    ${result}
+    Close All Connections
+
+Set OFF Dehaze
+    Open Connection telnet
+    Login telnet
+    Write    ${cmd_set_Dehaze_Off}
+    ${output}    Read Until    0#
+    Log to console    ${output}
+    ${result}    Get_Info_Device    ${output}    ${Res_cmd_set_Dehaze_Off}
+    Should Be True    ${result}
+    Sleep    ${time_out}
+    Close All Connections
+
+Set Dehaze False
+    Open Connection telnet
+    Login telnet
+    Write    ${cmd_set_Dehaze_False}
+    ${output}    Read Until    14#
+    Log to console    ${output}
+    ${result}    Get_Info_Device    ${output}    ${Res_cmd_set_Dehaze_False}
+    Should Be True    ${result}
+    Sleep    ${time_out}
+    Close All Connections
+
+*** Keywords ***
+Open Connection telnet
+    Open Connection    ${HOST}
+
+Login telnet
+    Login    ${USERNAME}    ${PASSWORD}

@@ -1,0 +1,2 @@
+Reset info: 11 (SOFTWARE)
+ezsp ver 0x08 stack type 0x02 stack ver. [6.7.6 GA build 327]

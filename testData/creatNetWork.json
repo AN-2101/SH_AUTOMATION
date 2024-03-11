@@ -1,0 +1,9 @@
+{
+  "typeMessage": "commission",
+  "dataMessage": {
+    "connectivityType": "zigbee",
+    "properties": {
+      "command": "creatNetWork"
+    }
+  }
+}

@@ -1,0 +1,32 @@
+{
+  "op" : 5,
+  "pc" : {
+    "m2m:sgn" : {
+      "sur" : "sub-0c884de5-8661-4087-aa66-8321bb0e7462",
+      "sud" : false,
+      "nev" : {
+        "rep" : {
+          "m2m:cin" : {
+            "cs" : 320,
+            "ct" : "20201204T143808",
+            "st" : 988,
+            "con" : "{\"commandId\":\"configGatewayData\",\"name\":\"configGatewayData\",\"commandType\":\"config\",\"status\":\"5\",\"updateTime\":1607068716049,\"responseData\":\"{\\\"requestID\\\":\\\"1587356365924\\\",\\\"status\\\":\\\"success\\\",\\\"typeMessage\\\":\\\"config\\\",\\\"dataMessage\\\":{\\\"properties\\\":{\\\"command\\\":\\\"configGatewayData\\\"}}}\",\"recordId\":\"1587356365924\"}",
+            "ty" : 4,
+            "ri" : "cin-992337d4-380f-46f5-a4c2-eb8fc342e9c5",
+            "lt" : "20201204T143808",
+            "pi" : "cnt-cd0fbd3a-159d-4f1f-a0e4-313a34253247",
+            "cnf" : "text/plains:0",
+            "rn" : "cin_992337d4-380f-46f5-a4c2-eb8fc342e9c5",
+            "et" : "19700101T164536",
+            "cr" : "SAE1dd32fb1-cf81-430b-9749-78dd157ded1f"
+          }
+        },
+        "net" : 3
+      },
+      "cr" : "SAE8793f237-4fdf-49ef-8e70-f4853b2cfd73"
+    }
+  },
+  "to" : "/SAE8793f237-4fdf-49ef-8e70-f4853b2cfd73",
+  "rqi" : "b0d8071b-f4cd-4004-bace-635ead0fbb9d",
+  "fr" : "/in-cse"
+}

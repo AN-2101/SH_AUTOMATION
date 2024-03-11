@@ -1,0 +1,12 @@
+{
+  "typeMessage": "commission",
+  "dataMessage": {
+    "connectivityType": "zigbee",
+    "properties": {
+      "command": "removeDevice",
+      "data": {
+        "deviceEUI": "0x588E81FFFE5A430D"
+      }
+    }
+  }
+}

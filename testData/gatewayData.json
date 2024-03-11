@@ -1,0 +1,8 @@
+{
+  "typeMessage": "requestData",
+  "dataMessage": {
+    "properties": {
+      "command": "gatewayData"
+    }
+  }
+}

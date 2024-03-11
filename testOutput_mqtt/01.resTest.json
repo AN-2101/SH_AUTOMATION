@@ -1,0 +1,560 @@
+{
+    "requestID": "1587356365924",
+    "status": "success",
+    "typeMessage": "requestData",
+    "dataMessage": {
+        "properties": {
+            "command": "listDevice",
+            "data": [
+                {
+                    "deviceType": "typeIASFire",
+                    "deviceName": "",
+                    "deviceLocate": "",
+                    "gatewayID": "BC33ACFFFE3DA95C",
+                    "connectivityType": "zigbee",
+                    "deviceID": "0xDBD9",
+                    "deviceEUI": "0x5C0272FFFEBBF86E",
+                    "deviceInfo": {
+                        "manufacturer": "VNPT",
+                        "model": "model1",
+                        "hwVersion": "1.0",
+                        "swVersion": "1.0"
+                    },
+                    "deviceTrait": {
+                        "deviceChild": [
+                            {
+                                "child": 1,
+                                "childName": "null",
+                                "childInfo": [
+                                    {
+                                        "traitName": "traitAlarmTrigger",
+                                        "bindDirection": "In",
+                                        "value": "null"
+                                    },
+                                    {
+                                        "traitName": "traitOpenClose",
+                                        "bindDirection": "In",
+                                        "value": "null"
+                                    }
+                                ]
+                            }
+                        ],
+                        "numChild": "1"
+                    },
+                    "customData": {
+                        "data1": "null",
+                        "data2": "null",
+                        "data3": "null"
+                    },
+                    "_id": "3rRJXgOhgBt8gHQ3",
+                    "devicePower": {
+                        "traitBatVoltage": "3.0",
+                        "traitBatPercent": "100.0"
+                    }
+                },
+                {
+                    "deviceType": "typeIASFire",
+                    "deviceName": "",
+                    "deviceLocate": "",
+                    "gatewayID": "BC33ACFFFE3DA95C",
+                    "connectivityType": "zigbee",
+                    "deviceID": "0xA3C2",
+                    "deviceEUI": "0x5C0272FFFEC4CC81",
+                    "deviceInfo": {
+                        "manufacturer": "VNPT",
+                        "model": "model1",
+                        "hwVersion": "1.0",
+                        "swVersion": "1.0"
+                    },
+                    "deviceTrait": {
+                        "deviceChild": [
+                            {
+                                "child": 1,
+                                "childName": "null",
+                                "childInfo": [
+                                    {
+                                        "traitName": "traitAlarmTrigger",
+                                        "bindDirection": "In",
+                                        "value": "null"
+                                    },
+                                    {
+                                        "traitName": "traitOpenClose",
+                                        "bindDirection": "In",
+                                        "value": "null"
+                                    }
+                                ]
+                            }
+                        ],
+                        "numChild": "1"
+                    },
+                    "customData": {
+                        "data1": "null",
+                        "data2": "null",
+                        "data3": "null"
+                    },
+                    "_id": "4mGOrQ8lHDhQ82hP",
+                    "devicePower": {
+                        "traitBatVoltage": "3.0",
+                        "traitBatPercent": "100.0"
+                    }
+                },
+                {
+                    "deviceType": "typeIASMotion",
+                    "deviceName": "",
+                    "deviceLocate": "",
+                    "gatewayID": "BC33ACFFFE3DA95C",
+                    "connectivityType": "zigbee",
+                    "deviceID": "0x5571",
+                    "deviceEUI": "0xEC1BBDFFFEC873D4",
+                    "deviceInfo": {
+                        "manufacturer": "VNPT",
+                        "model": "model1",
+                        "hwVersion": "1.0",
+                        "swVersion": "1.0"
+                    },
+                    "deviceTrait": {
+                        "deviceChild": [
+                            {
+                                "child": 1,
+                                "childName": "null",
+                                "childInfo": [
+                                    {
+                                        "traitName": "traitAlarmTrigger",
+                                        "bindDirection": "In",
+                                        "value": 0
+                                    },
+                                    {
+                                        "traitName": "traitOpenClose",
+                                        "bindDirection": "In",
+                                        "value": 0
+                                    }
+                                ]
+                            }
+                        ],
+                        "numChild": "1"
+                    },
+                    "customData": {
+                        "data1": "null",
+                        "data2": "null",
+                        "data3": "null"
+                    },
+                    "_id": "ASwBHemAtR6r03bm"
+                },
+                {
+                    "deviceType": "typeIASFire",
+                    "deviceName": "",
+                    "deviceLocate": "",
+                    "gatewayID": "BC33ACFFFE3DA95C",
+                    "connectivityType": "zigbee",
+                    "deviceID": "0x1590",
+                    "deviceEUI": "0x5C0272FFFEC4CC8C",
+                    "deviceInfo": {
+                        "manufacturer": "VNPT",
+                        "model": "model1",
+                        "hwVersion": "1.0",
+                        "swVersion": "1.0"
+                    },
+                    "deviceTrait": {
+                        "deviceChild": [
+                            {
+                                "child": 1,
+                                "childName": "null",
+                                "childInfo": [
+                                    {
+                                        "traitName": "traitAlarmTrigger",
+                                        "bindDirection": "In",
+                                        "value": "null"
+                                    },
+                                    {
+                                        "traitName": "traitOpenClose",
+                                        "bindDirection": "In",
+                                        "value": "null"
+                                    }
+                                ]
+                            }
+                        ],
+                        "numChild": "1"
+                    },
+                    "customData": {
+                        "data1": "null",
+                        "data2": "null",
+                        "data3": "null"
+                    },
+                    "_id": "DZVliHMT9rqsOrNW",
+                    "devicePower": {
+                        "traitBatVoltage": "3.0",
+                        "traitBatPercent": "100.0"
+                    }
+                },
+                {
+                    "deviceType": "typeTempSensor",
+                    "deviceName": "",
+                    "deviceLocate": "",
+                    "gatewayID": "BC33ACFFFE3DA95C",
+                    "connectivityType": "zigbee",
+                    "deviceID": "0x74D9",
+                    "deviceEUI": "0x60A423FFFE138CBE",
+                    "deviceInfo": {
+                        "manufacturer": "VNPT",
+                        "model": "model1",
+                        "hwVersion": "1.0",
+                        "swVersion": "1.0"
+                    },
+                    "deviceTrait": {
+                        "deviceChild": [
+                            {
+                                "child": 1,
+                                "childName": "null",
+                                "childInfo": [
+                                    {
+                                        "traitName": "traitTemperature",
+                                        "bindDirection": "In",
+                                        "value": "28.10"
+                                    },
+                                    {
+                                        "traitName": "traitHumidity",
+                                        "bindDirection": "In",
+                                        "value": "39.80"
+                                    }
+                                ]
+                            }
+                        ],
+                        "numChild": "1"
+                    },
+                    "customData": {
+                        "data1": "null",
+                        "data2": "null",
+                        "data3": "null"
+                    },
+                    "_id": "FlTxNxJml6n2NqW9",
+                    "devicePower": {
+                        "traitBatVoltage": "3.1",
+                        "traitBatPercent": "100.0"
+                    }
+                },
+                {
+                    "deviceType": "typeIASMotion",
+                    "deviceName": "",
+                    "deviceLocate": "",
+                    "gatewayID": "BC33ACFFFE3DA95C",
+                    "connectivityType": "zigbee",
+                    "deviceID": "0x678B",
+                    "deviceEUI": "0xEC1BBDFFFEC874EC",
+                    "deviceInfo": {
+                        "manufacturer": "VNPT",
+                        "model": "model1",
+                        "hwVersion": "1.0",
+                        "swVersion": "1.0"
+                    },
+                    "deviceTrait": {
+                        "deviceChild": [
+                            {
+                                "child": 1,
+                                "childName": "null",
+                                "childInfo": [
+                                    {
+                                        "traitName": "traitAlarmTrigger",
+                                        "bindDirection": "In",
+                                        "value": 1
+                                    },
+                                    {
+                                        "traitName": "traitOpenClose",
+                                        "bindDirection": "In",
+                                        "value": 0
+                                    }
+                                ]
+                            }
+                        ],
+                        "numChild": "1"
+                    },
+                    "customData": {
+                        "data1": "null",
+                        "data2": "null",
+                        "data3": "null"
+                    },
+                    "_id": "GDCnA3XL7dDCkcRK",
+                    "devicePower": {
+                        "traitBatVoltage": "2.8",
+                        "traitBatPercent": "74.0"
+                    }
+                },
+                {
+                    "deviceType": "typeTempSensor",
+                    "deviceName": "",
+                    "deviceLocate": "",
+                    "gatewayID": "BC33ACFFFE3DA95C",
+                    "connectivityType": "zigbee",
+                    "deviceID": "0x9F41",
+                    "deviceEUI": "0x60A423FFFE11A34E",
+                    "deviceInfo": {
+                        "manufacturer": "VNPT",
+                        "model": "model1",
+                        "hwVersion": "1.0",
+                        "swVersion": "1.0"
+                    },
+                    "deviceTrait": {
+                        "deviceChild": [
+                            {
+                                "child": 1,
+                                "childName": "null",
+                                "childInfo": [
+                                    {
+                                        "traitName": "traitTemperature",
+                                        "bindDirection": "In",
+                                        "value": "27.70"
+                                    },
+                                    {
+                                        "traitName": "traitHumidity",
+                                        "bindDirection": "In",
+                                        "value": "38.80"
+                                    }
+                                ]
+                            }
+                        ],
+                        "numChild": "1"
+                    },
+                    "customData": {
+                        "data1": "null",
+                        "data2": "null",
+                        "data3": "null"
+                    },
+                    "_id": "GNV2nQiUwvTURmXO",
+                    "devicePower": {
+                        "traitBatVoltage": "3.0",
+                        "traitBatPercent": "100.0"
+                    }
+                },
+                {
+                    "deviceType": "typeIASFire",
+                    "deviceName": "",
+                    "deviceLocate": "",
+                    "gatewayID": "BC33ACFFFE3DA95C",
+                    "connectivityType": "zigbee",
+                    "deviceID": "0xDE3F",
+                    "deviceEUI": "0x5C0272FFFEC4CC8B",
+                    "deviceInfo": {
+                        "manufacturer": "VNPT",
+                        "model": "model1",
+                        "hwVersion": "1.0",
+                        "swVersion": "1.0"
+                    },
+                    "deviceTrait": {
+                        "deviceChild": [
+                            {
+                                "child": 1,
+                                "childName": "null",
+                                "childInfo": [
+                                    {
+                                        "traitName": "traitAlarmTrigger",
+                                        "bindDirection": "In",
+                                        "value": "null"
+                                    },
+                                    {
+                                        "traitName": "traitOpenClose",
+                                        "bindDirection": "In",
+                                        "value": "null"
+                                    }
+                                ]
+                            }
+                        ],
+                        "numChild": "1"
+                    },
+                    "customData": {
+                        "data1": "null",
+                        "data2": "null",
+                        "data3": "null"
+                    },
+                    "_id": "GOieIJNOyUNfVN0l",
+                    "devicePower": {
+                        "traitBatVoltage": "3.0",
+                        "traitBatPercent": "100.0"
+                    }
+                },
+                {
+                    "deviceType": "typeIASFire",
+                    "deviceName": "",
+                    "deviceLocate": "",
+                    "gatewayID": "BC33ACFFFE3DA95C",
+                    "connectivityType": "zigbee",
+                    "deviceID": "0x8EAB",
+                    "deviceEUI": "0x5C0272FFFEC4CC80",
+                    "deviceInfo": {
+                        "manufacturer": "VNPT",
+                        "model": "model1",
+                        "hwVersion": "1.0",
+                        "swVersion": "1.0"
+                    },
+                    "deviceTrait": {
+                        "deviceChild": [
+                            {
+                                "child": 1,
+                                "childName": "null",
+                                "childInfo": [
+                                    {
+                                        "traitName": "traitAlarmTrigger",
+                                        "bindDirection": "In",
+                                        "value": "null"
+                                    },
+                                    {
+                                        "traitName": "traitOpenClose",
+                                        "bindDirection": "In",
+                                        "value": "null"
+                                    }
+                                ]
+                            }
+                        ],
+                        "numChild": "1"
+                    },
+                    "customData": {
+                        "data1": "null",
+                        "data2": "null",
+                        "data3": "null"
+                    },
+                    "_id": "La5XfRI0p3YrmWhH",
+                    "devicePower": {
+                        "traitBatVoltage": "3.0",
+                        "traitBatPercent": "100.0"
+                    }
+                },
+                {
+                    "deviceType": "typeIASFire",
+                    "deviceName": "",
+                    "deviceLocate": "",
+                    "gatewayID": "BC33ACFFFE3DA95C",
+                    "connectivityType": "zigbee",
+                    "deviceID": "0xE1F9",
+                    "deviceEUI": "0x5C0272FFFEC4CC83",
+                    "deviceInfo": {
+                        "manufacturer": "VNPT",
+                        "model": "model1",
+                        "hwVersion": "1.0",
+                        "swVersion": "1.0"
+                    },
+                    "deviceTrait": {
+                        "deviceChild": [
+                            {
+                                "child": 1,
+                                "childName": "null",
+                                "childInfo": [
+                                    {
+                                        "traitName": "traitAlarmTrigger",
+                                        "bindDirection": "In",
+                                        "value": "null"
+                                    },
+                                    {
+                                        "traitName": "traitOpenClose",
+                                        "bindDirection": "In",
+                                        "value": "null"
+                                    }
+                                ]
+                            }
+                        ],
+                        "numChild": "1"
+                    },
+                    "customData": {
+                        "data1": "null",
+                        "data2": "null",
+                        "data3": "null"
+                    },
+                    "_id": "bQbebiJMk5EQkFNk",
+                    "devicePower": {
+                        "traitBatVoltage": "3.0",
+                        "traitBatPercent": "100.0"
+                    }
+                },
+                {
+                    "deviceType": "typeIASContact",
+                    "deviceName": "",
+                    "deviceLocate": "",
+                    "gatewayID": "BC33ACFFFE3DA95C",
+                    "connectivityType": "zigbee",
+                    "deviceID": "0x74D3",
+                    "deviceEUI": "0x5C0272FFFE904618",
+                    "deviceInfo": {
+                        "manufacturer": "VNPT",
+                        "model": "model1",
+                        "hwVersion": "1.0",
+                        "swVersion": "1.0"
+                    },
+                    "deviceTrait": {
+                        "deviceChild": [
+                            {
+                                "child": 1,
+                                "childName": "null",
+                                "childInfo": [
+                                    {
+                                        "traitName": "traitAlarmTrigger",
+                                        "bindDirection": "In",
+                                        "value": 1
+                                    },
+                                    {
+                                        "traitName": "traitOpenClose",
+                                        "bindDirection": "In",
+                                        "value": 0
+                                    }
+                                ]
+                            }
+                        ],
+                        "numChild": "1"
+                    },
+                    "customData": {
+                        "data1": "null",
+                        "data2": "null",
+                        "data3": "null"
+                    },
+                    "_id": "cHDWUC7Z4YOxcUow",
+                    "devicePower": {
+                        "traitBatVoltage": "3.0",
+                        "traitBatPercent": "100.0"
+                    }
+                },
+                {
+                    "deviceType": "typeIASFire",
+                    "deviceName": "",
+                    "deviceLocate": "",
+                    "gatewayID": "BC33ACFFFE3DA95C",
+                    "connectivityType": "zigbee",
+                    "deviceID": "0x5E7E",
+                    "deviceEUI": "0x5C0272FFFEC4CC9B",
+                    "deviceInfo": {
+                        "manufacturer": "VNPT",
+                        "model": "model1",
+                        "hwVersion": "1.0",
+                        "swVersion": "1.0"
+                    },
+                    "deviceTrait": {
+                        "deviceChild": [
+                            {
+                                "child": 1,
+                                "childName": "null",
+                                "childInfo": [
+                                    {
+                                        "traitName": "traitAlarmTrigger",
+                                        "bindDirection": "In",
+                                        "value": "null"
+                                    },
+                                    {
+                                        "traitName": "traitOpenClose",
+                                        "bindDirection": "In",
+                                        "value": "null"
+                                    }
+                                ]
+                            }
+                        ],
+                        "numChild": "1"
+                    },
+                    "customData": {
+                        "data1": "null",
+                        "data2": "null",
+                        "data3": "null"
+                    },
+                    "_id": "i6Nm73CnjJCQlPaa",
+                    "devicePower": {
+                        "traitBatVoltage": "3.0",
+                        "traitBatPercent": "100.0"
+                    }
+                }
+            ]
+        }
+    }
+}
